@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Владислав Князев](https://up.htmlacademy.ru/adaptive/22/user/1605271).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Приходкин](https://htmlacademy.ru/profile/prikhodkin).
 
 ---
 
