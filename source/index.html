@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -21,13 +22,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="./catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="./form.html">Подбор программы</a>
+            <a class="site-list__link" href="./form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -38,8 +39,10 @@
     <h1 class="visually-hidden">Cat Energy — Функциональное питание для котов</h1>
     <section class="promo">
       <div class="promo__wrapper">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__text">Занялся собой? Займись котом!</p>
+        <div class="promo__container">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <p class="promo__text">Занялся собой? Займись котом!</p>
+        </div>
         <img class="promo__image" src="./img/promo-image.jpg" alt="Изображение кошачьего питание со вкусом курицы"
           width="280" height="270">
         <a class="promo__link button" href="./form.html">Подобрать программу</a>
@@ -124,7 +127,7 @@
             <p class="example__costs">Затраты на питание: 15 000 РУБ.</p>
           </dl>
           <div class="example__photo-change">
-            <img class="example__image" src="./img/fat-cat.jpg" width="311" height="232" alt="Изображение полного кота">
+            <img class="example__image" src="./img/fat-cat.png" width="311" height="232" alt="Изображение полного кота">
             <div class="example__it-became">
               <p class="example__it">Было</p>
               <input class="example__range" type="range">
@@ -143,7 +146,8 @@
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </section>
       <section class="page-footer__map map">
-        <img class="map__image" width="320" height="362" src="./img/map.png" alt="Изображение карты по ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <img class="map__image" width="320" height="362" src="./img/map.png"
+          alt="Изображение карты по ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </section>
       <section class="page-footer__useful-links useful-links">
         <h2 class="visually-hidden">Полезные ссылки</h2>
@@ -165,7 +169,8 @@
         </div>
         <div class="useful-links__academy academy">
           <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/academy-logo.svg" alt="Изображение лого HTML Academy" width="27" height="34"></a>
+          <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/academy-logo.svg"
+              alt="Изображение лого HTML Academy" width="27" height="34"></a>
         </div>
       </section>
     </div>

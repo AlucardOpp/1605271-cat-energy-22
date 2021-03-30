@@ -1,0 +1,26 @@
+.special-offers__item {
+  background-color: $special-background-grey;
+}
+
+.special-offers__title {
+  font-size: 24px;
+  line-height: 37px;
+  color: $black;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.special-offers__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-grey;
+}
+
+.special-offers__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $black;
+  text-transform: uppercase;
+}
