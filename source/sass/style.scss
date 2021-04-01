@@ -3,17 +3,22 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
+@import "global/visually-hidden.scss";
 
 // Blocks
 
 @import "blocks/page.scss";
 @import "blocks/title.scss";
-@import "blocks/header/site-list.scss";
-@import "blocks/main-page/promo.scss";
-@import "blocks/main-page/special-offers.scss";
-@import "blocks/main-page/advantages.scss";
-@import "blocks/main-page/example.scss";
-@import "blocks/footer/page-footer.scss";
-@import "blocks/footer/contacts.scss";
-@import "blocks/footer/academy.scss";
+@import "blocks/site-list.scss";
+@import "blocks/promo.scss";
+@import "blocks/special-offers.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/form.scss";
+@import "blocks/cat-information.scss";
+@import "blocks/label.scss";
+@import "blocks/input.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/academy.scss";
 @import "blocks/button.scss";
