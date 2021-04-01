@@ -1,0 +1,15 @@
+.product-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-dark-grey;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product-card__term,
+.product-card__description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-grey;
+}
