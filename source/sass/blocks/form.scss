@@ -1,5 +1,40 @@
+.form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form__inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__required-fields {
   font-size: 14px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper {
+    width: 630px;
+  }
+
+  .form__container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    width: 1220px;
+  }
+
+  .form__inner {
+    flex-direction: row;
+  }
 }

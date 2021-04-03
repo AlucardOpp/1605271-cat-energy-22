@@ -4,13 +4,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .useful-links__wrapper {
     width: 708px;
     flex-direction: row;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .useful-links__wrapper {
     width: 1220px;
   }
 }

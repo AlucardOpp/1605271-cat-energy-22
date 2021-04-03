@@ -11,42 +11,43 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-    <div class="page-header__image-and-logo">
-    <a class="page-header__image-logo" href="./index.html">
-      <img src="./img/logo-mobile.svg" width="34" height="38" alt="Логотип компании Cat Energy">
-    </a>
-    <a class="page-header__name-logo" href="./index.html">
-      <img src="./img/name-logo.svg" width="101" height="18" alt="Название компании Cat Energy">
-    </a>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="./index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Подбор программы</a>
-          </li>
-        </ul>
+      <div class="page-header__image-and-logo">
+        <a class="page-header__image-logo" href="./index.html">
+          <img src="./img/logo-mobile.svg" width="34" height="38" alt="Логотип компании Cat Energy">
+        </a>
+        <a class="page-header__name-logo" href="./index.html">
+          <img src="./img/name-logo.svg" width="101" height="18" alt="Название компании Cat Energy">
+        </a>
       </div>
-    </nav>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="./index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title title title_size_main">Подбор программы</h1>
     <form class="page_main__form form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form__wrapper">
+        <h1 class="form__title title title_size_main">Подбор программы</h1>
+        <p class="cat-information__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class="form__inner">
         <section class="cat-information">
           <h2 class="visually-hidden">Информация о коте</h2>
-          <p class="cat-information__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <ul class="cat-information__list">
             <li class="cat-information__item">
               <label class="cat-information__label label label_input" for="cat-name">ИМЯ:*</label>
@@ -75,10 +76,12 @@
             </li>
             <li class="diet-selection__item">
               <input id="weight-advice" type="radio" class="diet-selection__input" name="diet-selection">
-              <label class="diet-selection__label label label_radio" for="weight-advice">Не знаю (Нужен ваш совет)</label>
+              <label class="diet-selection__label label label_radio" for="weight-advice">Не знаю (Нужен ваш
+                совет)</label>
             </li>
           </ul>
         </section>
+      </div>
         <section class="owner-information">
           <h2 class="owner-information__title title title_size_form">Контактные данные (владельца кота)</h2>
           <ul class="owner-information__list">
@@ -126,17 +129,19 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <section class="page-footer__contacts contacts">
+    <section class="page-footer__contacts contacts">
+      <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__dealers">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </section>
-      <section class="page-footer__map map">
-        <img class="map__image" width="320" height="362" src="./img/map.png"
-          alt="Изображение карты по ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-      </section>
-      <section class="page-footer__useful-links useful-links">
+      </div>
+    </section>
+    <section class="page-footer__map map">
+      <img class="map__image" width="320" height="362" src="./img/map.png"
+        alt="Изображение карты по ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+    </section>
+    <section class="page-footer__useful-links useful-links">
+      <div class="useful-links__wrapper">
         <h2 class="visually-hidden">Полезные ссылки</h2>
         <div class="useful-links__logo">
           <img src="./img/name-logo.svg" width="101" height="18" alt="Название компании Cat Energy">
@@ -159,8 +164,8 @@
           <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/academy-logo.svg"
               alt="Изображение лого HTML Academy" width="27" height="34"></a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </footer>
 
 </body>

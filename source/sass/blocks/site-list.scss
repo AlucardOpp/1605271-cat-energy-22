@@ -7,12 +7,8 @@
   color: $black;
 }
 
-.site-list {
-  @media (min-width: $tablet-width) {
-    width: 440px;
-  }
-
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .site-list {
     width: 478px;
   }
 }
