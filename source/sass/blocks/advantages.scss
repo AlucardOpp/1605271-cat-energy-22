@@ -4,3 +4,43 @@
   line-height: 18px;
   color: $special-grey;
 }
+
+.advantages__wrapper {
+  width: 279px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.advantages__item {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    width: 324px;
+    height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+  }
+}

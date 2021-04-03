@@ -8,8 +8,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  width: 320px;
   height: 302px;
+}
+
+.promo__title,
+.promo__text {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .promo__title {
@@ -20,4 +28,19 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.promo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1060px;
+  }
 }

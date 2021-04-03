@@ -6,3 +6,13 @@
   text-decoration: none;
   color: $black;
 }
+
+.site-list {
+  @media (min-width: $tablet-width) {
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+  }
+}

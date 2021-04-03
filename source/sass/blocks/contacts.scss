@@ -1,3 +1,16 @@
+.contacts__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 625px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 418px;
+  }
+}
+
 .contacts__dealers {
   font-size: 16px;
   line-height: 18px;
