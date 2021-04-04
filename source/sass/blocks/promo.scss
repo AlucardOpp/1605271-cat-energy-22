@@ -14,10 +14,6 @@
 .promo__title,
 .promo__text {
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    text-align: left;
-  }
 }
 
 .promo__title {
@@ -35,12 +31,24 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
 
-  @media (min-width: $tablet-width) {
-    width: 708px;
+@media (min-width: $tablet-width) {
+  .promo__title {
+    text-align: left;
   }
 
-  @media (min-width: $desktop-width) {
+  .promo__text {
+    text-align: left;
+  }
+
+  .promo__wrapper {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
     width: 1060px;
   }
 }

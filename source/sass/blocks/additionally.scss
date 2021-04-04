@@ -1,0 +1,28 @@
+.additionally__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .additionally__item {
+    width: 315px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally__list {
+    flex-wrap: nowrap;
+  }
+
+  .additionally__item {
+    width: 305px;
+  }
+}
