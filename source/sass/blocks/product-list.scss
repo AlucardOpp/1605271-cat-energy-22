@@ -1,14 +1,29 @@
-.product-list__more-products__title {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: $black-111;
-  text-transform: uppercase;
+.product-list__wrapper {
+  margin: 0 auto;
+  width: 280px;
 }
 
-.product-list__more-products__text {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Arial", sans-serif;
-  color: $special-grey;
+.product-list__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .product-list__wrapper {
+    width: 708px;
+  }
+
+  .product-list__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list__wrapper {
+    width: 1220px;
+  }
 }

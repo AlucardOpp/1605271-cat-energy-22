@@ -1,3 +1,8 @@
+.additional-product {
+  display: flex;
+  flex-direction: column;
+}
+
 .additional-product__title {
   font-size: 16px;
   line-height: 16px;
@@ -6,10 +11,50 @@
   font-weight: 400;
 }
 
+.additional-product__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .additional-product__term,
 .additional-product__description {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: $special-grey;
+}
+
+.additional-product__description {
+  margin: 0;
+}
+
+.additional-product__button {
+  width: 100%;
+  height: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-product {
+    height: 140px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additional-product__list,
+  .additional-product__title {
+    width: 315px;
+  }
+
+  .additional-product__button {
+    height: 38px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .additional-product__button {
+    width: 244px;
+    height: 40px;
+  }
 }
