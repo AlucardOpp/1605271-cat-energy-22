@@ -1,7 +1,50 @@
+.academy {
+  display: flex;
+  justify-content: space-between;
+  min-width: 280px;
+}
+
 .academy__link {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: $special-grey;
   text-decoration: none;
+  align-self: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.academy__logo {
+  margin-top: 22px;
+  margin-bottom: 17px;
+}
+
+.academy__svg:hover path,
+.academy__svg:active path {
+  fill: $green;
+}
+
+.academy__svg:active {
+  opacity: 0.3;
+}
+
+
+@media (min-width: $tablet-width) {
+  .academy {
+    min-width: 164px;
+    justify-content: start;
+  }
+
+  .academy__link {
+    margin-right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .academy {
+    min-width: 163px;
+  }
 }

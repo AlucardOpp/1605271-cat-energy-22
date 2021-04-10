@@ -1,3 +1,9 @@
+.page-footer {
+  width: 100%;
+  position: relative;
+}
+
 .page-footer__useful-links {
   background-color: $special-background-grey;
+  min-width: 320px;
 }

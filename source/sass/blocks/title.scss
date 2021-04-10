@@ -3,22 +3,29 @@
   font-weight: 400;
 }
 
-.title_size_main {
+.title--size-main {
   font-size: 36px;
   line-height: 36px;
 }
 
-.title_size_index {
+.title--size-index {
   font-size: 36px;
   line-height: 40px;
 }
 
-.title_size_form {
+.title--size-form {
   font-size: 24px;
   line-height: 26px;
 }
 
-.title_size_additional {
+.title--size-additional {
   font-size: 24px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .title--size-index {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

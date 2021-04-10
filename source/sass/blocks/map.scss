@@ -1,4 +1,30 @@
+.map {
+  border: none;
+  height: 362px;
+}
+
 .map__image {
   width: 100%;
-  object-fit: cover;
+  height: 362px;
+  background-image: url("../img/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 400px;
+  }
+
+  .map__image {
+    background-image: url("../img/map-tablet.png");
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__image {
+    background-image: url("../img/map-desktop.png");
+  }
 }

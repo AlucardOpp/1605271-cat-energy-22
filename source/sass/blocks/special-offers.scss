@@ -1,29 +1,45 @@
+.special-offers {
+  margin-bottom: 27px;
+}
+
 .special-offers__list {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-  }
 }
 
 .special-offers__item {
+  position: relative;
   background-color: $special-background-grey;
-  width: 280px;
-  height: 266px;
+  min-width: 280px;
+  min-height: 266px;
+  margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 372px;
+  &:last-child {
+    margin-bottom: 0;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    width: 570px;
-    height: 374px;
-  }
+.special-offers__item--slim::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 22px;
+  background-image: url("../img/cat_slimming.svg");
+  width: 50px;
+  height: 53px;
+}
+
+.special-offers__item--pro::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 13px;
+  background-image: url("../img/cat_weight.svg");
+  width: 67px;
+  height: 50px;
 }
 
 .special-offers__title {
@@ -32,6 +48,7 @@
   color: $black;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 30px 0 29px 92px;
 }
 
 .special-offers__text {
@@ -39,29 +56,194 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-grey;
+  margin: 0 20px 15px 20px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid $border-link;
+  min-height: 90px;
 }
 
 .special-offers__link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   color: $black;
   text-transform: uppercase;
+  margin-left: 19px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 12px;
+    background-image: url("../img/special-offers-arrow.svg");
+    position: absolute;
+    top: 6px;
+  }
+
+  &:hover::after,
+  &:active::after {
+    background-image: url("../img/special-offers-arrow-hover-and-active.svg");
+  }
+}
+
+.special-offers__link--slim::after {
+  left: 100px;
+}
+
+.special-offers__link--pro::after {
+  left: 99px;
 }
 
 .special-offers__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  min-width: 280px;
+  margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .special-offers {
+    margin-top: -59px;
+    margin-bottom: 52px;
+  }
+
+  .special-offers__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 77px 0 24px 53px;
+  }
+
+  .special-offers__text {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    margin-left: 52px;
+
+    &--slim {
+      width: 377px;
+      margin-bottom: 29px;
+    }
+
+    &--pro {
+      width: 342px;
+      margin-bottom: 29px;
+    }
+  }
+
+  .special-offers__link {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 52px;
+
+    &::after {
+      top: 9px;
+    }
+  }
+
+  .special-offers__link--slim::after {
+    left: 131px;
+  }
+
+  .special-offers__link--pro::after {
+    left: 127px;
+  }
+
+  .special-offers__item {
+    min-width: 708px;
+    min-height: 372px;
+    margin-bottom: 30px;
+  }
+
+  .special-offers__item--slim::before {
+    width: 200px;
+    height: 211px;
+    top: 81px;
+    left: auto;
+    right: 9%;
+    background-image: url("../img/cat_slimming-tablet.svg");
+  }
+
+  .special-offers__item--pro::before {
+    top: 91px;
+    left: auto;
+    right: 4%;
+    background-image: url("../img/cat_weight-tablet.svg");
+    width: 268px;
+    height: 200px;
+  }
+
   .special-offers__wrapper {
-    width: 708px;
+    min-width: 708px;
+    margin: 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .special-offers {
+    margin-top: 0;
+    margin-bottom: 71px;
+  }
+
   .special-offers__wrapper {
     width: 1220px;
+    margin: 0 auto;
+  }
+
+  .special-offers__list {
+    flex-direction: row;
+  }
+
+  .special-offers__item {
+    min-width: 570px;
+    min-height: 374px;
+    margin-bottom: 0;
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .special-offers__item--slim::before {
+    width: 100px;
+    height: 106px;
+    top: 40px;
+    left: 52px;
+    right: auto;
+    background-image: url("../img/cat_slimming-desktop.svg");
+  }
+
+  .special-offers__item--pro::before {
+    top: 47px;
+    left: 33px;
+    right: auto;
+    background-image: url("../img/cat_weight-desktop.svg");
+    width: 134px;
+    height: 100px;
+  }
+
+  .special-offers__title {
+    margin-left: 214px;
+    margin-bottom: 73px;
+  }
+
+  .special-offers__text {
+    width: 467px;
+    padding-bottom: 9px;
+
+    &--slim,
+    &--pro {
+      margin-bottom: 0;
+    }
+  }
+
+  .special-offers__link--slim::after {
+    left: 134px;
+  }
+
+  .special-offers__link--pro::after {
+    left: 128px;
   }
 }

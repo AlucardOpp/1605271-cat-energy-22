@@ -1,31 +1,94 @@
+.page-header {
+  position: relative;
+  margin-top: 11px;
+}
+
+.page-header--closed {
+  margin-bottom: 12px;
+}
+
+.page-header--opened,
+.page-header--nojs {
+  margin-bottom: 207px;
+}
+
 .page-header__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  min-width: 280px;
+  margin: 0 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .page-header__image-and-logo {
   display: flex;
+  min-width: 191px;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
+.page-header__image-logo {
+  width: 34px;
+  height: 38px;
+  background-image: url("../img/logo-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+}
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    margin-top: 24px;
+    margin-bottom: 30px;
+  }
+
   .page-header__wrapper {
-    width: 708px;
+    min-width: 708px;
+    margin: 0 30px;
+    align-items: center;
   }
 
   .page-header__image-and-logo {
-    width: 174px;
+    min-width: 174px;
+    margin-right: 95px;
+  }
+
+  .page-header__image-logo {
+    width: 61px;
+    height: 50px;
+    background-image: url("../img/logo-tablet.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    margin-top: 53px;
+    margin-bottom: 29px;
+    z-index: 1;
+  }
+
   .page-header__wrapper {
     width: 1220px;
+    margin: 0 auto;
   }
 
   .page-header__image-and-logo {
-    width: 202px;
+    width: 182px;
+  }
+
+  .page-header__image-logo {
+    width: 70px;
+    height: 59px;
+    background-image: url("../img/logo-desktop.svg");
+    margin-bottom: 0;
   }
 }

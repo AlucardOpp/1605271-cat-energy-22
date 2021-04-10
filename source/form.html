@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--closed">
     <div class="page-header__wrapper">
       <div class="page-header__image-and-logo">
         <a class="page-header__image-logo" href="./index.html">
@@ -19,13 +19,12 @@
           <img src="./img/name-logo.svg" width="101" height="18" alt="Название компании Cat Energy">
         </a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--main">
               <a class="site-list__link" href="./index.html">Главная</a>
             </li>
             <li class="site-list__item">
@@ -35,7 +34,6 @@
               <a class="site-list__link">Подбор программы</a>
             </li>
           </ul>
-        </div>
       </nav>
     </div>
   </header>
@@ -43,22 +41,22 @@
   <main class="page-main">
     <form class="page_main__form form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form__wrapper">
-        <h1 class="form__title title title_size_main">Подбор программы</h1>
+        <h1 class="form__title title title--size-main">Подбор программы</h1>
         <p class="cat-information__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <div class="form__inner">
         <section class="cat-information">
           <h2 class="visually-hidden">Информация о коте</h2>
           <ul class="cat-information__list">
             <li class="cat-information__item">
-              <label class="cat-information__label label label_input" for="cat-name">ИМЯ:*</label>
+              <label class="cat-information__label label label--input" for="cat-name">ИМЯ:*</label>
               <input class="cat-information__input input" type="text" id="cat-name" value="барсик">
             </li>
             <li class="cat-information__item">
-              <label class="cat-information__label label label_input" for="cat-weight">Вес (кг):*</label>
+              <label class="cat-information__label label label--input" for="cat-weight">Вес (кг):*</label>
               <input class="cat-information__input input" type="number" id="cat-weight" value="7">
             </li>
             <li class="cat-information__item">
-              <label class="cat-information__label label label_input" for="cat-age">Возраст (лет):</label>
+              <label class="cat-information__label label label--input" for="cat-age">Возраст (лет):</label>
               <input class="cat-information__input input" type="number" id="cat-age " value="7">
             </li>
           </ul>
@@ -68,55 +66,55 @@
           <ul class="diet-selection__list">
             <li class="diet-selection__item">
               <input id="weight-loss" type="radio" class="diet-selection__input" name="diet-selection" checked>
-              <label class="diet-selection__label label label_radio" for="weight-loss">похудение</label>
+              <label class="diet-selection__label label label--radio" for="weight-loss">похудение</label>
             </li>
             <li class="diet-selection__item">
               <input id="weight-gain" type="radio" class="diet-selection__input" name="diet-selection">
-              <label class="diet-selection__label label label_radio" for="weight-gain">Набор массы</label>
+              <label class="diet-selection__label label label--radio" for="weight-gain">Набор массы</label>
             </li>
             <li class="diet-selection__item">
               <input id="weight-advice" type="radio" class="diet-selection__input" name="diet-selection">
-              <label class="diet-selection__label label label_radio" for="weight-advice">Не знаю (Нужен ваш
+              <label class="diet-selection__label label label--radio" for="weight-advice">Не знаю (Нужен ваш
                 совет)</label>
             </li>
           </ul>
         </section>
       </div>
         <section class="owner-information">
-          <h2 class="owner-information__title title title_size_form">Контактные данные (владельца кота)</h2>
+          <h2 class="owner-information__title title title--size-form">Контактные данные (владельца кота)</h2>
           <ul class="owner-information__list">
             <li class="owner-information__item">
-              <label class="owner-information__label label label_input" for="owner-email">E-mail:*</label>
+              <label class="owner-information__label label label--input" for="owner-email">E-mail:*</label>
               <input class="owner-information__input input" type="email" id="owner-email" value="kuklachev@gmail.com">
             </li>
             <li class="owner-information__item">
-              <label class="owner-information__label label label_input" for="owner-tel">Телефон:*</label>
+              <label class="owner-information__label label label--input" for="owner-tel">Телефон:*</label>
               <input class="owner-information__input input" type="tel" id="owner-tel" value="8 (960) 900-60-90">
             </li>
           </ul>
         </section>
         <section class="comment">
-          <h2 class="comment__title title title_size_form">Комментарий</h2>
+          <h2 class="comment__title title title--size-form">Комментарий</h2>
           <textarea class="comment__textarea input">Расскажите обо всех повадках кота</textarea>
         </section>
         <section class="additionally">
-          <h2 class="additionally__title title title_size_form">Дополнительно</h2>
+          <h2 class="additionally__title title title--size-form">Дополнительно</h2>
           <ul class="additionally__list">
             <li class="additionally__item">
               <input type="checkbox" checked class="additionally__input" id="additionally-sweetener" name="sweetener">
-              <label for="additionally-sweetener" class="label label_checkbox">сахарозаменитель</label>
+              <label for="additionally-sweetener" class="label label--checkbox">сахарозаменитель</label>
             </li>
             <li class="additionally__item">
               <input type="checkbox" class="additionally__input" id="additionally-water" name="water">
-              <label for="additionally-water" class="label label_checkbox">питьевая вода</label>
+              <label for="additionally-water" class="label label--checkbox">питьевая вода</label>
             </li>
             <li class="additionally__item">
               <input type="checkbox" class="additionally__input" id="additionally-milk" name="milk">
-              <label for="additionally-milk" class="label label_checkbox">молоко</label>
+              <label for="additionally-milk" class="label label--checkbox">молоко</label>
             </li>
             <li class="additionally__item">
               <input type="checkbox" class="additionally__input" id="additionally-vitamins" name="vitamins">
-              <label for="additionally-vitamins" class="label label_checkbox">витамины</label>
+              <label for="additionally-vitamins" class="label label--checkbox">витамины</label>
             </li>
           </ul>
         </section>
@@ -168,6 +166,7 @@
     </section>
   </footer>
 
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
