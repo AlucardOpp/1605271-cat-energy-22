@@ -7,14 +7,40 @@
   text-decoration: none;
   font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active {
+    background-color: $green-hover;
+    color: $white-active;
+  }
 }
 
-.button_promo_link {
+.button--promo-link {
   font-size: 14px;
   line-height: 18px;
 }
 
-.button_product-list {
+.button--product-list {
   background-color: $special-background-grey;
   color: $special-grey;
+}
+
+.button--padding-11 {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .button--promo-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .button--padding-11 {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }

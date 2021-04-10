@@ -1,23 +1,43 @@
 .promo {
   color: $white;
+  margin-bottom: 22px;
 }
 
 .promo__container {
+  position: relative;
   background-image: url("../img/promo-container-background.jpg");
-  background-color: $promo-container-green;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: overlay;
   height: 302px;
+  margin-bottom: 136px;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    display: block;
+    background-image: url("../img/promo-image.png");
+    background-repeat: no-repeat;
+    background-size: 280px 270px;
+    background-position: 50% 30px;
+    z-index: 2;
+    top: 50px;
+    left: 50px;
+  }
 }
 
 .promo__title,
 .promo__text {
+  min-width: 320px;
   text-align: center;
+  margin: 0;
+  z-index: 3;
 }
 
 .promo__title {
   color: $white;
+  padding-top: 27px;
+  padding-bottom: 25px;
 }
 
 .promo__text {
@@ -27,28 +47,117 @@
 }
 
 .promo__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
 }
 
+.promo__link {
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
 @media (min-width: $tablet-width) {
+  .promo {
+    margin-bottom: 0;
+  }
+
   .promo__title {
     text-align: left;
+    color: $black;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .promo__text {
     text-align: left;
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .promo__link,
+  .promo__title,
+  .promo__text {
+    margin-left: 117px;
   }
 
   .promo__wrapper {
-    width: 708px;
+    min-width: 708px;
+  }
+
+  .promo__container {
+    background-image: none;
+    z-index: -1;
+    margin-bottom: 0;
+    min-height: 180px;
+    height: auto;
+
+    &::after {
+      height: 639px;
+      background-size: 709px 609px;
+      background-image: url("../img/promo-image-tablet.png");
+      background-position: 33px 21px;
+    }
+  }
+
+  .promo__link {
+    position: relative;
+    top: -591px;
+    width: 244px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    z-index: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/promo-container-background-desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 694px;
+      right: 0;
+      top: 0;
+    }
+  }
+
   .promo__wrapper {
     width: 1060px;
+    margin: 0 auto;
+    margin-bottom: 333px;
+  }
+
+  .promo__container {
+    margin-top: -52px;
+    z-index: 0;
+
+
+    &::after {
+      position: absolute;
+      height: 529px;
+      background-size: 552px 499px;
+      background-image: url("../img/promo-image-desktop.png");
+      background-position: 320px 0;
+    }
+  }
+
+  .promo__link,
+  .promo__title,
+  .promo__text {
+    margin-left: 0;
+  }
+
+  .promo__title {
+    padding-top: 125px;
+    padding-bottom: 40px;
+  }
+
+  .promo__link {
+    top: 52px;
+    z-index: 2;
   }
 }
