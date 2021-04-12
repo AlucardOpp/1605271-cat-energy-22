@@ -96,4 +96,12 @@
       border-bottom: 2px solid $white;
     }
   }
+
+  .site-list__link--form {
+    color: $black-111;
+  }
+
+  .site-list__link--form.site-list__link--current {
+    border-bottom: 2px solid $green;
+  }
 }

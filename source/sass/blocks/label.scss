@@ -15,3 +15,10 @@
 .label--checkbox {
   color: $black;
 }
+
+@media (min-width: $tablet-width) {
+  .label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -1,5 +1,123 @@
+.diet-selection {
+  border-top: 1px solid $border-link;
+  border-bottom: 1px solid $border-link;
+}
+
+.diet-selection__wrapper {
+  min-width: 280px;
+  margin: 0 20px;
+}
+
 .diet-selection__list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.diet-selection__item {
+  margin-bottom: 19px;
+
+  &:first-child {
+    margin-top: 25px;
+  }
+
+  &:last-child {
+    margin-bottom: 21px;
+  }
+}
+
+.diet-selection__label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 45px;
+}
+
+.diet-selection__radio {
+  + label::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/radio-off.svg");
+    background-size: cover;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+  }
+
+  &:checked + label::before {
+    background-image: url("../img/radio-on.svg");
+  }
+
+  &:hover + label::before {
+    background-image: url("../img/radio-off-hover.svg");
+  }
+
+  &:hover:checked + label::before {
+    background-image: url("../img/radio-on-hover.svg");
+  }
+
+  &:disabled + label::before,
+  &:disabled:checked + label::before,
+  &:disabled + label,
+  &:disabled:checked + label {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .diet-selection {
+    border: none;
+  }
+
+  .diet-selection__wrapper {
+    min-width: 628px;
+    margin: 0 70px;
+    border: 1px solid $border-input;
+  }
+
+  .diet-selection__label {
+    padding-left: 86px;
+  }
+
+  .diet-selection__item {
+    margin-bottom: 21px;
+
+    &:first-child {
+      margin-top: 27px;
+    }
+
+    &:last-child {
+      margin-bottom: 27px;
+    }
+  }
+
+  .diet-selection__radio {
+    + label::before {
+      width: 40px;
+      height: 40px;
+      top: -4.5px;
+      left: 25px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .diet-selection__wrapper {
+    margin: 0;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .diet-selection__item {
+    width: 568px;
+    margin-bottom: 23px;
+
+    &:first-child {
+      margin-top: 29.6px;
+    }
+
+    &:last-child {
+      margin-bottom: 29.6px;
+    }
+  }
 }

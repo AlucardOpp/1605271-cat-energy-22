@@ -5,4 +5,65 @@
   color: $special-grey;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+  box-sizing: border-box;
+  padding: 0;
+  border: 1px solid $border-input;
+  height: 45px;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $border-example;
+  }
+
+  &:focus {
+    border: 2px solid $special-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $input-error;
+  }
+}
+
+.input--number {
+  padding-left: 14px;
+
+  &:focus,
+  &:invalid {
+    padding-left: 13px;
+  }
+}
+
+.input--text {
+  padding-left: 12px;
+
+  &:focus,
+  &:invalid {
+    padding-left: 11px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+  }
+
+  .input--text {
+    padding-left: 16px;
+
+    &:focus,
+    &:invalid {
+      padding-left: 15px;
+    }
+  }
+
+  .input--number {
+    padding-left: 18px;
+
+    &:focus,
+    &:invalid {
+      padding-left: 17px;
+    }
+  }
 }
