@@ -3,6 +3,11 @@
   margin-top: 11px;
 }
 
+.page-header--catalog {
+  border-bottom: 1px solid $border-link;
+  padding-bottom: 7px;
+}
+
 .page-header--closed {
   margin-bottom: 12px;
 }
@@ -10,6 +15,7 @@
 .page-header--opened,
 .page-header--nojs {
   margin-bottom: 207px;
+  border-bottom: none;
 }
 
 .page-header__wrapper {
@@ -47,6 +53,11 @@
   .page-header {
     margin-top: 24px;
     margin-bottom: 30px;
+  }
+
+  .page-header--catalog {
+    border: none;
+    padding-bottom: 0;
   }
 
   .page-header__wrapper {

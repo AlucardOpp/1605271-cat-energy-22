@@ -202,6 +202,11 @@
     }
   }
 
+  .example__costs--price {
+    position: relative;
+    top: 8px;
+  }
+
   .example__photo-change {
     background-color: $example-background-grey;
     position: relative;
@@ -275,6 +280,7 @@
     min-width: auto;
     width: 630px;
     margin: 0 0 0 auto;
+    z-index: 2;
   }
 
   .example__title {
@@ -307,6 +313,7 @@
   }
 
   .example__costs--price {
+    position: static;
     margin-left: 56px;
   }
 

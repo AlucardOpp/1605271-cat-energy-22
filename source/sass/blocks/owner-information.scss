@@ -1,3 +1,47 @@
+.owner-information {
+  width: 100%;
+  position: relative;
+}
+
+.owner-information__div {
+  min-width: 280px;
+  margin: 0 20px;
+}
+
+.owner-information__block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  z-index: 0;
+
+  &::before {
+    height: 2px;
+    width: 100%;
+    display: inline-block;
+    background: $green;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    content: "";
+  }
+}
+
+.owner-information__title {
+  margin: 25px 0 34px 0;
+  z-index: 2;
+  text-align: start;
+  background: $white;
+  padding: 0 13px 0 20px;
+  width: 187px;
+  margin-left: -20px;
+}
+
+.owner-information__wrapper {
+  min-width: 280px;
+  margin: 0 20px;
+}
+
 .owner-information__list {
   padding: 0;
   margin: 0;
@@ -6,8 +50,208 @@
   flex-direction: column;
 }
 
+.owner-information__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.owner-information__label {
+  &--email {
+    min-width: 60px;
+  }
+
+  &--tel {
+    min-width: 76px;
+  }
+}
+
+.owner-information__input {
+  position: relative;
+  width: 100%;
+  padding-left: 14px;
+
+  &:focus,
+  &:invalid {
+    padding-left: 13px;
+  }
+}
+
+.owner-information__input--email {
+  background-image: url("../img/icon_email.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 13px;
+  outline: none;
+  background-position: top 16px right 13px;
+
+  &:focus {
+    background-image: url("../img/icon_email-focus.svg");
+    background-position: top 15px right 12.5px;
+    background-size: 17px 12px;
+  }
+
+  &:invalid {
+    background-image: url("../img/icon_email-error.svg");
+    background-position: top 15px right 12.5px;
+    background-size: 17px 12px;
+  }
+}
+
+.owner-information__input--tel {
+  background-image: url("../img/icon_phone.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  outline: none;
+  background-position: top 11px right 10px;
+
+  &:focus {
+    background-image: url("../img/icon_phone-focus.svg");
+    background-position: top 10px right 9px;
+  }
+
+  &:invalid {
+    background-image: url("../img/icon_phone-error.svg");
+    background-position: top 10px right 9px;
+  }
+}
+
+@media (min-width: 344px) {
+  .owner-information__title {
+    padding: 0 5px 0 20px;
+    width: 304px;
+    margin-left: -20px;
+  }
+}
+
+@media (min-width: 387px) {
+  .owner-information__title {
+    padding: 0 7px 0 20px;
+    width: 354px;
+    margin-left: -20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .owner-information__div {
+    min-width: 628px;
+    margin: 0 70px;
+  }
+
+  .owner-information__block {
+    &::before {
+      top: 94px;
+    }
+  }
+
+  .owner-information__title {
+    width: 512px;
+    padding: 0 40px 0 38px;
+    margin: 71px 0 76px -38px;
+  }
+
+  .owner-information__wrapper {
+    min-width: 628px;
+    margin: 0 70px;
+  }
+
+  .owner-information__label {
+    &--email {
+      min-width: 80px;
+    }
+
+    &--tel {
+      min-width: 99px;
+    }
+  }
+
+  .owner-information__input {
+    padding-left: 19px;
+
+    &:focus,
+    &:invalid {
+      padding-left: 18px;
+    }
+  }
+
+  .owner-information__input--email {
+    background-position: top 20px right 15px;
+
+    &:focus {
+      background-position: top 19px right 14.5px;
+    }
+
+    &:invalid {
+      background-position: top 19px right 14.5px;
+    }
+  }
+
+  .owner-information__input--tel {
+    background-position: top 16.5px right 14px;
+
+    &:focus {
+      background-position: top 15.5px right 13px;
+    }
+
+    &:invalid {
+      background-position: top 15.5px right 13px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .owner-information__div {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .owner-information__block {
+    &::before {
+      top: 92px;
+    }
+  }
+
+  .owner-information__title {
+    width: 512px;
+    padding: 0 39px 0 39px;
+    margin: 69px 0 76px -39px;
+  }
+
+  .owner-information__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .owner-information__list {
     flex-direction: row;
+    align-items: center;
+  }
+
+  .owner-information__item--email {
+    width: 647px;
+    margin-bottom: 0;
+  }
+
+  .owner-information__item--tel {
+    width: 573px;
+  }
+
+  .owner-information__input--email {
+    width: 486px;
+  }
+
+  .owner-information__label--email {
+    width: 82px;
+  }
+
+  .owner-information__input--tel {
+    width: 472px;
+  }
+
+  .owner-information__label--tel {
+    width: 100px;
   }
 }

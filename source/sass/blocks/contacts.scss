@@ -1,3 +1,7 @@
+.contacts--form {
+  background-color: $special-background-grey;
+}
+
 .contacts__wrapper {
   min-width: 280px;
   margin: 0 20px;
@@ -31,7 +35,6 @@
 .contacts__dealers {
   width: 140px;
 }
-
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
@@ -84,5 +87,9 @@
 
   .contacts__address {
     margin-right: 89px;
+  }
+
+  .contacts--form {
+    background-color: inherit;
   }
 }
