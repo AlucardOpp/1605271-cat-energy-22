@@ -17,6 +17,16 @@
   padding-bottom: 15px;
 }
 
+.useful-links__logo__image {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .useful-links__wrapper {
     min-width: 708px;

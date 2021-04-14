@@ -3,7 +3,8 @@
   margin-top: 11px;
 }
 
-.page-header--catalog {
+.page-header--catalog,
+.page-header--form {
   border-bottom: 1px solid $border-link;
   padding-bottom: 7px;
 }
@@ -55,7 +56,8 @@
     margin-bottom: 30px;
   }
 
-  .page-header--catalog {
+  .page-header--catalog,
+  .page-header--form {
     border: none;
     padding-bottom: 0;
   }

@@ -1,9 +1,104 @@
 .product-card {
-  width: 280px;
-  height: 208px;
+  width: 100%;
+  min-height: 210px;
+  border-bottom: 1px solid $product-card-border;
+
+  &:first-child {
+    border-top: 1px solid $product-card-border;
+  }
+}
+
+.product-card__wrapper {
+  min-width: 280px;
+  margin: 20px 20px 0 20px;
+  min-height: 165px;
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+
+  &--chicken-500g::before {
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 86px;
+    top: 13px;
+    left: 36px;
+    background-image: url("../img/cat-energy-pro-chicken-500g.png");
+    background-repeat: no-repeat;
+  }
+
+  &--chicken-1000g::before {
+    position: absolute;
+    content: "";
+    width: 84px;
+    height: 100px;
+    top: 10px;
+    left: 30px;
+    background-image: url("../img/cat-energy-pro-chicken-1000g.png");
+    background-repeat: no-repeat;
+  }
+
+  &--fish-500g::before {
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 78px;
+    top: 26px;
+    left: 36px;
+    background-image: url("../img/cat-energy-pro-fish-500g.png");
+    background-repeat: no-repeat;
+  }
+
+  &--fish-1000g::before {
+    position: absolute;
+    content: "";
+    width: 84px;
+    height: 100px;
+    top: 10px;
+    left: 30px;
+    background-image: url("../img/cat-energy-pro-fish-1000g.png");
+    background-repeat: no-repeat;
+  }
+
+  &--buckwheat-500g::before {
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 78px;
+    top: 29px;
+    left: 36px;
+    background-image: url("../img/cat-energy-slim-buckwheat-500g.png");
+    background-repeat: no-repeat;
+  }
+
+  &--buckwheat-1000g::before {
+    position: absolute;
+    content: "";
+    width: 84px;
+    height: 100px;
+    top: 11px;
+    left: 30px;
+    background-image: url("../img/cat-energy-slim-buckwheat-1000g.png");
+    background-repeat: no-repeat;
+  }
+
+  &--rice-500g::before {
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 84px;
+    top: 23px;
+    left: 36px;
+    background-image: url("../img/cat-energy-slim-rice-500g.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.product-card__wrapper--more {
+  justify-content: flex-end;
+  margin-top: 17px;
 }
 
 .product-card__image {
@@ -12,12 +107,16 @@
 
 .product-card__image--500g {
   left: 36px;
-  top: 30px;
+  top: 15px;
 }
 
 .product-card__image--1000g {
   left: 28px;
-  top: 24px;
+  top: 11px;
+}
+
+.product-card__container {
+  margin-left: 140px;
 }
 
 .product-card__title {
@@ -27,15 +126,25 @@
   font-weight: 400;
   text-transform: uppercase;
   align-self: flex-end;
+  margin: 0 0 14px 0;
+  width: 76px;
+
+  @media (min-width: 340px) {
+    width: 101px;
+  }
+
+  @media (min-width: 360px) {
+    width: auto;
+    margin-bottom: 34px;
+  }
 }
 
 .product-card__list {
-  width: 142px;
-  height: 44px;
-  align-self: flex-end;
+  min-width: 140px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .product-card__term,
@@ -44,12 +153,30 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-grey;
-  width: 71px;
 }
 
 .product-card__description {
   margin: 0;
   text-align: right;
+}
+
+.product-card__button,
+.product-card__more-products__button {
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card__more-products__button {
+  &:hover {
+    background-color: $product-card-border;
+  }
+
+  &:active {
+    background-color: $product-card-border;
+    color: $special-grey-opacity;
+  }
 }
 
 .product-card__more-products__title {
@@ -58,72 +185,284 @@
   font-weight: 400;
   color: $black-111;
   text-transform: uppercase;
+  margin: 0 0 8px 0;
+  align-self: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    border-bottom: 2px solid $product-card-plus;
+    left: 86px;
+    top: -38px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    border-left: 2px solid $product-card-plus;
+    left: 100px;
+    top: -50px;
+  }
 }
 
 .product-card__more-products__text {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   font-family: "Arial", sans-serif;
   color: $special-grey;
+  margin: 0 0 21px 0;
+  align-self: center;
 }
-
 
 @media (min-width: $tablet-width) {
   .product-card {
-    width: 324px;
+    border: none;
+    width: auto;
+    margin: 0 0 140px 0;
+
+    &:first-child {
+      border: none;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .product-card__wrapper {
+    margin: 0;
+    min-width: 324px;
     height: 430px;
+    justify-content: flex-end;
+    background-color: $special-background-grey;
+
+    &--chicken-500g::before {
+      width: 161px;
+      height: 172px;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      top: -35px;
+      background-image: url("../img/cat-energy-pro-chicken-500g-tablet.png");
+      background-repeat: no-repeat;
+    }
+
+    &--chicken-1000g::before {
+      width: 168px;
+      height: 206px;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      top: -63px;
+      background-image: url("../img/cat-energy-pro-chicken-1000g-tablet.png");
+      background-repeat: no-repeat;
+    }
+
+    &--fish-500g::before {
+      width: 163px;
+      height: 174px;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      top: -35px;
+      background-image: url("../img/cat-energy-pro-fish-500g-tablet.png");
+      background-repeat: no-repeat;
+    }
+
+    &--fish-1000g::before {
+      width: 168px;
+      height: 200px;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      top: -63px;
+      background-image: url("../img/cat-energy-pro-fish-1000g-tablet.png");
+      background-repeat: no-repeat;
+    }
+
+    &--buckwheat-500g::before {
+      width: 161px;
+      height: 171px;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      top: -35px;
+      background-image: url("../img/cat-energy-slim-buckwheat-500g-tablet.png");
+      background-repeat: no-repeat;
+    }
+
+    &--buckwheat-1000g::before {
+      width: 168px;
+      height: 200px;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      top: -63px;
+      background-image: url("../img/cat-energy-slim-buckwheat-1000g-tablet.png");
+      background-repeat: no-repeat;
+    }
+
+    &--rice-500g::before {
+      width: 163px;
+      height: 174px;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      top: -35px;
+      background-image: url("../img/cat-energy-slim-rice-500g-tablet.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .product-card__wrapper--more {
+    background-color: $white;
+    box-sizing: border-box;
+    border: 2px solid $special-background-grey;
+  }
+
+  .product-card__container {
+    flex-direction: column;
+    min-height: 157px;
+    margin: 0 36px;
     justify-content: center;
   }
 
-  .product-card__image--500g {
-    left: 125px;
-    top: -15px;
-  }
-
-  .product-card__image--1000g {
-    left: 120px;
-    top: -20px;
+  .product-card__title {
+    width: 159px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto 21px auto;
   }
 
   .product-card__list {
-    width: 250px;
-    height: 90px;
-  }
+    padding-bottom: 6px;
+    border-bottom: 1px solid $border-example;
+    margin-top: 6px;
 
-  .product-card__title,
-  .product-card__list {
-    align-self: center;
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   .product-card__term,
   .product-card__description {
-    width: 125px;
+    font-size: 16px;
+  }
+
+  .product-card__more-products__title {
+    width: 134px;
+    margin-bottom: 23px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 22px;
+
+    &::before {
+      width: 60px;
+      height: 2px;
+      border-bottom: 2px solid $product-card-plus;
+      left: 38px;
+      top: -81px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 60px;
+      border-left: 2px solid $product-card-plus;
+      left: 66px;
+      top: -108px;
+    }
+  }
+
+  .product-card__more-products__text {
+    width: 167px;
+    margin-bottom: 84px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .product-card__button {
+    margin: 24px 37px 40px 39px;
+  }
+
+  .product-card__more-products__button {
+    margin: 0 36px 36px 37px;
+  }
+}
+
+@media (min-width: 1032px) {
+  .product-card {
+    &:nth-last-child(3) {
+      margin-bottom: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-card {
+    margin-bottom: 144px;
+
+    &:nth-last-child(4) {
+      margin-bottom: 0;
+    }
+  }
+
+  .product-card__title {
+    line-height: 21px;
+    margin-bottom: 24px;
+  }
+
+  .product-card__wrapper {
+    min-width: auto;
     width: 245px;
     height: 431px;
+
+    &--chicken-500g::before {
+      top: -44px;
+    }
+
+    &--chicken-1000g::before {
+      width: 172px;
+      height: 202px;
+      top: -75px;
+    }
+
+    &--fish-500g::before {
+      top: -44px;
+    }
+
+    &--fish-1000g::before {
+      width: 172px;
+      height: 196px;
+      top: -75px;
+    }
+
+    &--buckwheat-500g::before {
+      top: -44px;
+    }
+
+    &--buckwheat-1000g::before {
+      width: 172px;
+      height: 196px;
+      top: -75px;
+    }
+
+    &--rice-500g::before {
+      top: -35px;
+    }
   }
 
-  .product-card__image--500g {
-    left: 90px;
-    top: -20px;
-  }
-
-  .product-card__image--1000g {
-    left: 85px;
-    top: -40px;
-  }
-
-  .product-card__list {
-    width: 170px;
-    height: 90px;
-  }
-
-  .product-card__term,
-  .product-card__description {
-    width: 85px;
+  .product-card__button {
+    margin-top: 22px;
+    margin-bottom: 38px;
   }
 }
