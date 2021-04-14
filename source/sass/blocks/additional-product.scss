@@ -100,11 +100,20 @@
   .additional-product__button {
     width: 244px;
     height: 40px;
-    margin: 0;
+    margin: 0 0 0 38px;
   }
 
   .additional-product__list,
   .additional-product__title {
     height: 20px;
+  }
+
+  .additional-product__list {
+    width: 288px;
+    justify-content: space-between;
+  }
+
+  .additional-product__title {
+    width: 325px;
   }
 }
