@@ -66,6 +66,13 @@
 }
 
 .additionally__checkbox {
+  &:focus {
+    + label {
+      outline: auto;
+      outline-offset: 10px;
+    }
+  }
+
   + label::before {
     content: "";
     width: 30px;

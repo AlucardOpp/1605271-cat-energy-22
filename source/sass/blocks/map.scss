@@ -10,6 +10,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -20,11 +24,19 @@
   .map__image {
     background-image: url("../img/map-tablet.png");
     height: 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.png");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .map__image {
     background-image: url("../img/map-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.png");
+    }
   }
 }

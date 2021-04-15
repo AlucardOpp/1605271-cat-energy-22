@@ -242,9 +242,14 @@
       width: 354px;
       height: 620px;
       background-image: url("../img/fat-cat-half-tablet.png");
+      background-size: cover;
       position: absolute;
       top: -552px;
       left: -69px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/fat-cat-half-tablet@2x.png");
+      }
     }
 
     &::after {
@@ -253,8 +258,13 @@
       width: 354px;
       height: 607px;
       background-image: url("../img/slim-cat-half-tablet.png");
+      background-size: cover;
       top: -554px;
       right: -69px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/slim-cat-half-tablet@2x.png");
+      }
     }
   }
 
@@ -344,6 +354,10 @@
       background-image: url("../img/fat-cat-half-desktop.png");
       top: -555px;
       left: -78px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/fat-cat-half-desktop@2x.png");
+      }
     }
 
     &::after {
@@ -352,6 +366,10 @@
       background-image: url("../img/slim-cat-half-desktop.png");
       top: -554px;
       right: -31px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/slim-cat-half-desktop@2x.png");
+      }
     }
   }
 }
