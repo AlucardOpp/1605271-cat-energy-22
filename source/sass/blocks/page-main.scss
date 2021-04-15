@@ -1,16 +1,18 @@
 .page-main__title {
-  margin: 0 auto;
-  width: 280px;
+  margin: 15px 20px 38px 20px;
+  min-width: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    width: 708px;
+    min-width: 708px;
+    margin: 26px 30px 164px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__title {
     width: 1220px;
+    margin: 26px auto 164px auto;
   }
 }

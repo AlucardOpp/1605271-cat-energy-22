@@ -118,11 +118,18 @@
 
 .example__it,
 .example__became {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
   cursor: pointer;
+  color: $black;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  display: block;
+  outline-offset: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -340,11 +347,11 @@
     }
 
     &::after {
-      width: 325px;
+      width: 315px;
       height: 654px;
       background-image: url("../img/slim-cat-half-desktop.png");
       top: -554px;
-      right: -41px;
+      right: -31px;
     }
   }
 }

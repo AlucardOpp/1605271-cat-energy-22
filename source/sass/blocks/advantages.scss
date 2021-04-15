@@ -45,24 +45,28 @@
   min-width: 60px;
   height: 60px;
   margin-right: 20px;
-  background-size: cover;
+  background-color: $green;
   background-repeat: no-repeat;
   background-position: center;
 
   &--leaf {
-    background-image: url("../img/advantages-leaf.svg");
+    background-image: url("../img/icon_leaf.svg");
+    background-size: 30px 32px;
   }
 
   &--powder {
-    background-image: url("../img/advantages-powder.svg");
+    background-image: url("../img/icon_tub.svg");
+    background-size: 29px 31px;
   }
 
   &--cutlery {
-    background-image: url("../img/advantages-cutlery.svg");
+    background-image: url("../img/icon_eat.svg");
+    background-size: 25px 30px;
   }
 
   &--alarm-clock {
-    background-image: url("../img/advantages-alarm-clock.svg");
+    background-image: url("../img/icon_alarm.svg");
+    background-size: 32px 33px;
   }
 }
 
@@ -126,21 +130,21 @@
     margin-top: 33px;
     margin-bottom: 31px;
 
-    &--leaf {
-      background-image: url("../img/advantages-leaf-tablet.svg");
-    }
+    // &--leaf {
+    //   background-image: url("../img/advantages-leaf-tablet.svg");
+    // }
 
-    &--powder {
-      background-image: url("../img/advantages-powder-tablet.svg");
-    }
+    // &--powder {
+    //   background-image: url("../img/advantages-powder-tablet.svg");
+    // }
 
-    &--cutlery {
-      background-image: url("../img/advantages-cutlery-tablet.svg");
-    }
+    // &--cutlery {
+    //   background-image: url("../img/advantages-cutlery-tablet.svg");
+    // }
 
-    &--alarm-clock {
-      background-image: url("../img/advantages-alarm-clock-tablet.svg");
-    }
+    // &--alarm-clock {
+    //   background-image: url("../img/advantages-alarm-clock-tablet.svg");
+    // }
   }
 }
 

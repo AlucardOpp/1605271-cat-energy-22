@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--catalog page-header--closed page-header--nojs">
+  <header class="page-header page-header--form page-header--closed page-header--nojs">
     <div class="page-header__wrapper">
       <div class="page-header__image-and-logo">
         <a class="page-header__image-logo" href="./index.html">
@@ -71,16 +71,16 @@
             <h2 class="visually-hidden">Выбор диеты</h2>
             <ul class="diet-selection__list">
               <li class="diet-selection__item">
-                <input id="weight-loss" type="radio" class="diet-selection__radio visually-hidden" value="weight-loss" name="diet-selection" checked>
-                <label class="diet-selection__label label label--radio" for="weight-loss">похудение</label>
+                <input id="weight-loss" type="radio" class="diet-selection__radio visually-hidden" value="weight-loss" name="diet-selection" tabindex="-1" checked>
+                <label class="diet-selection__label label label--radio" for="weight-loss" tabindex="0">похудение</label>
               </li>
               <li class="diet-selection__item">
-                <input id="weight-gain" type="radio" class="diet-selection__radio visually-hidden" value="weight-gain" name="diet-selection">
-                <label class="diet-selection__label label label--radio" for="weight-gain">Набор массы</label>
+                <input id="weight-gain" type="radio" class="diet-selection__radio visually-hidden" value="weight-gain" name="diet-selection" tabindex="-1">
+                <label class="diet-selection__label label label--radio" for="weight-gain" tabindex="0">Набор массы</label>
               </li>
               <li class="diet-selection__item">
-                <input id="weight-advice" type="radio" class="diet-selection__radio visually-hidden" value="weight-advice" name="diet-selection">
-                <label class="diet-selection__label label label--radio" for="weight-advice">Не знаю (Нужен ваш
+                <input id="weight-advice" type="radio" class="diet-selection__radio visually-hidden" value="weight-advice" name="diet-selection" tabindex="-1">
+                <label class="diet-selection__label label label--radio" for="weight-advice" tabindex="0">Не знаю (Нужен ваш
                   совет)</label>
               </li>
             </ul>
@@ -88,7 +88,7 @@
         </section>
       </div>
       <section class="owner-information">
-        <div class=owner-information__div>
+        <div class="owner-information__div">
           <div class="owner-information__block">
             <h2 class="owner-information__title title title--size-form">Контактные данные (владельца кота)</h2>
           </div>
@@ -107,7 +107,7 @@
         </div>
       </section>
       <section class="comment">
-        <div class=comment__div>
+        <div class="comment__div">
           <div class="comment__block">
             <h2 class="comment__title title title--size-form">Комментарий</h2>
           </div>
@@ -117,7 +117,7 @@
         </div>
       </section>
       <section class="additionally">
-        <div class=additionally__div>
+        <div class="additionally__div">
           <div class="additionally__block">
             <h2 class="additionally__title title title--size-form">Дополнительно</h2>
           </div>
@@ -125,20 +125,20 @@
         <div class="additionally__wrapper">
           <ul class="additionally__list">
             <li class="additionally__item">
-              <input type="checkbox" checked class="additionally__checkbox visually-hidden" id="additionally-sweetener" name="sweetener">
-              <label for="additionally-sweetener" class="additionally__label label label--checkbox">сахарозаменитель</label>
+              <input type="checkbox" checked class="additionally__checkbox visually-hidden" id="additionally-sweetener" tabindex="-1" name="sweetener">
+              <label for="additionally-sweetener" class="additionally__label label label--checkbox" tabindex="0">сахарозаменитель</label>
             </li>
             <li class="additionally__item">
-              <input type="checkbox" class="additionally__checkbox visually-hidden" id="additionally-water" name="water">
-              <label for="additionally-water" class="additionally__label label label--checkbox">питьевая вода</label>
+              <input type="checkbox" class="additionally__checkbox visually-hidden" id="additionally-water" tabindex="-1" name="water">
+              <label for="additionally-water" class="additionally__label label label--checkbox" tabindex="0">питьевая вода</label>
             </li>
             <li class="additionally__item">
-              <input type="checkbox" class="additionally__checkbox visually-hidden" id="additionally-milk" name="milk">
-              <label for="additionally-milk" class="additionally__label label label--checkbox">молоко</label>
+              <input type="checkbox" class="additionally__checkbox visually-hidden" id="additionally-milk" tabindex="-1" name="milk">
+              <label for="additionally-milk" class="additionally__label label label--checkbox" tabindex="0">молоко</label>
             </li>
             <li class="additionally__item">
-              <input type="checkbox" class="additionally__checkbox visually-hidden" id="additionally-vitamins" name="vitamins">
-              <label for="additionally-vitamins" class="additionally__label label label--checkbox">витамины</label>
+              <input type="checkbox" class="additionally__checkbox visually-hidden" id="additionally-vitamins" tabindex="-1" name="vitamins">
+              <label for="additionally-vitamins" class="additionally__label label label--checkbox" tabindex="0">витамины</label>
             </li>
           </ul>
         </div>
@@ -165,7 +165,7 @@
       <div class="useful-links__wrapper">
         <h2 class="visually-hidden">Полезные ссылки</h2>
         <div class="useful-links__logo">
-          <img class="useful-links__logo__image" src="./img/name-logo.svg" width="101" height="18" alt="Название компании Cat Energy">
+          <a href="./index.html"><img class="useful-links__logo__image" src="./img/name-logo.svg" width="101" height="18" alt="Название компании Cat Energy"></a>
         </div>
         <div class="useful-links__socials socials">
           <ul class="socials__list">
