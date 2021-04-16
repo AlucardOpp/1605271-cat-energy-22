@@ -74,10 +74,6 @@
   margin: 186px auto 0 auto;
   width: 180px;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: 340px) {
     width: 183px;
   }
@@ -147,10 +143,6 @@
     width: 161px;
     text-align: start;
     margin: 70px 124px 70px auto;
-
-    br {
-      display: block;
-    }
   }
 }
 
