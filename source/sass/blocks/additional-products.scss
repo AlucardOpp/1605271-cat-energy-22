@@ -76,6 +76,10 @@
 
   @media (min-width: 340px) {
     width: 183px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: 350px) {
@@ -137,6 +141,10 @@
     background-position: 78px center, center;
     height: 200px;
     margin: 67px 0 75px 0;
+
+    br {
+      display: block;
+    }
   }
 
   .additional-products__text {
