@@ -30,7 +30,7 @@
 .example__list {
   display: flex;
   justify-content: space-around;
-  margin: 0 0 17px 0;
+  margin: 0 0 19px 0;
 }
 
 .example__item {
@@ -92,7 +92,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
-  margin: 0 0 42px 0;
+  margin: 0 0 36px 0;
   align-self: center;
 
   br {
@@ -106,14 +106,14 @@
 
 .example__image {
   object-fit: cover;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 }
 
 .example__it-became {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 34px;
+  padding-bottom: 36px;
 }
 
 .example__it,
@@ -139,11 +139,11 @@
 
   .example__wrapper {
     min-width: 708px;
-    margin: 0 30px 241px 30px;
+    margin: 0 30px 230px 30px;
   }
 
   .example__title {
-    margin: 0 0 63px 0;
+    margin: 0 0 65px 0;
   }
 
   .example__information {
@@ -157,24 +157,24 @@
 
     &::before {
       width: 22px;
-      top: 66.8px;
+      top: 69.8px;
     }
 
     &::after {
       width: 26px;
-      top: 66.8px;
+      top: 69.8px;
     }
   }
 
   .example__item--days {
     &::before {
-      width: 14px;
-      top: 66.8px;
+      width: 9px;
+      top: 69.8px;
     }
 
     &::after {
       width: 7px;
-      top: 66.8px;
+      top: 69.8px;
     }
   }
 
@@ -183,11 +183,17 @@
     line-height: 24px;
     min-height: 72px;
     margin-bottom: 54px;
+    width: 685px;
+
+    @media (min-width: 769px) {
+      width: auto;
+    }
   }
 
   .example__number {
     font-size: 30px;
     line-height: 37px;
+    padding-bottom: 19px;
   }
 
   .example__description {
@@ -195,6 +201,10 @@
     line-height: 14px;
     width: auto;
     white-space: nowrap;
+  }
+
+  .example__description--days {
+    margin-left: 18px;
   }
 
   .example__costs {
@@ -218,6 +228,7 @@
     background-color: $example-background-grey;
     position: relative;
     z-index: 1;
+    padding-bottom: 34px;
   }
 
   .example__image {
@@ -259,7 +270,7 @@
       height: 607px;
       background-image: url("../img/slim-cat-half-tablet.png");
       background-size: cover;
-      top: -554px;
+      top: -544px;
       right: -69px;
 
       @media (min-resolution: 2dppx) {
@@ -295,7 +306,7 @@
 
   .example__wrapper {
     min-width: auto;
-    width: 630px;
+    width: 646px;
     margin: 0 0 0 auto;
     z-index: 2;
   }
@@ -319,6 +330,36 @@
     width: 366px;
   }
 
+  .example__item {
+    &::before {
+      width: 22px;
+      top: 70.8px;
+    }
+
+    &::after {
+      width: 26px;
+      top: 70.8px;
+    }
+  }
+
+  .example__item--days {
+    &::before {
+      width: 9px;
+    }
+
+    &::after {
+      width: 7px;
+    }
+  }
+
+  .example__description--days {
+    margin-left: 18px;
+  }
+
+  .example__number {
+    padding-bottom: 20px;
+  }
+
   .example__costs {
     text-align: start;
     margin-bottom: 74px;
@@ -331,14 +372,15 @@
 
   .example__costs--price {
     position: static;
-    margin-left: 56px;
+    margin-left: 58px;
   }
 
   .example__photo-change {
     align-self: flex-end;
-    width: 590px;
+    width: 574px;
     margin: 0 auto 0 0;
     background-color: $special-background-grey;
+    padding-bottom: 0;
   }
 
   .example__image {
@@ -364,7 +406,7 @@
       width: 315px;
       height: 654px;
       background-image: url("../img/slim-cat-half-desktop.png");
-      top: -554px;
+      top: -553px;
       right: -31px;
 
       @media (min-resolution: 2dppx) {

@@ -34,11 +34,11 @@
 }
 
 .input--text {
-  padding-left: 12px;
+  padding-left: 14px;
 
   &:focus,
   &:invalid {
-    padding-left: 11px;
+    padding-left: 13px;
   }
 }
 
@@ -50,11 +50,31 @@
   }
 
   .input--text {
-    padding-left: 16px;
+    padding-left: 18px;
 
     &:focus,
     &:invalid {
-      padding-left: 15px;
+      padding-left: 17px;
+    }
+  }
+
+  .input--number {
+    padding-left: 18px;
+
+    &:focus,
+    &:invalid {
+      padding-left: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input--text {
+    padding-left: 20px;
+
+    &:focus,
+    &:invalid {
+      padding-left: 19px;
     }
   }
 

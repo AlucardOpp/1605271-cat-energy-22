@@ -105,14 +105,14 @@
 
 @media (min-width: $tablet-width) {
   .special-offers {
-    margin-top: -59px;
-    margin-bottom: 52px;
+    margin-top: -65px;
+    margin-bottom: 45px;
   }
 
   .special-offers__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 77px 0 24px 53px;
+    margin: 77px 0 25px 53px;
   }
 
   .special-offers__text {
@@ -123,12 +123,12 @@
 
     &--slim {
       width: 377px;
-      margin-bottom: 29px;
+      margin-bottom: 30px;
     }
 
     &--pro {
       width: 342px;
-      margin-bottom: 29px;
+      margin-bottom: 30px;
     }
   }
 
@@ -143,11 +143,11 @@
   }
 
   .special-offers__link--slim::after {
-    left: 131px;
+    left: 133px;
   }
 
   .special-offers__link--pro::after {
-    left: 127px;
+    left: 129px;
   }
 
   .special-offers__item {
