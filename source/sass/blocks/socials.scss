@@ -25,15 +25,25 @@
   opacity: 0.3;
 }
 
-.socials__svg--vk:hover path,
-.socials__svg--instagram:hover path,
-.socials__svg--vk:active path,
-.socials__svg--instagram:active path {
+.socials__svg--vk,
+.socials__svg--instagram {
+  fill: $svg-grey;
+}
+
+.socials__svg--facebook {
+  fill: none;
+  stroke: $svg-grey;
+}
+
+.socials__svg--vk:hover,
+.socials__svg--instagram:hover,
+.socials__svg--vk:active,
+.socials__svg--instagram:active {
   fill: $green;
 }
 
-.socials__svg--facebook:hover path,
-.socials__svg--facebook:active path {
+.socials__svg--facebook:hover,
+.socials__svg--facebook:active {
   stroke: $green;
 }
 
