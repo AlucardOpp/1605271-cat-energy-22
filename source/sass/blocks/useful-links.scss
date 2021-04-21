@@ -32,7 +32,7 @@
     min-width: 708px;
     margin: 0 30px 0 30px;
     flex-direction: row;
-    min-height: 146px;
+    min-height: 150px;
   }
 
   .useful-links__logo__image {
@@ -43,7 +43,7 @@
   .useful-links__logo {
     width: 128px;
     margin-right: 20px;
-    margin-top: 26px;
+    margin-top: 28px;
   }
 
   .useful-links__socials {
@@ -53,7 +53,7 @@
 
   .useful-links__academy {
     width: 163px;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
   }
 }
 
@@ -61,5 +61,10 @@
   .useful-links__wrapper {
     width: 1220px;
     margin: 0 auto;
+    min-height: 149px;
+  }
+
+  .useful-links__academy {
+    padding-top: 3px;
   }
 }

@@ -18,11 +18,11 @@
   margin-bottom: 19px;
 
   &:first-child {
-    margin-top: 25px;
+    margin-top: 27px;
   }
 
   &:last-child {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 }
 
@@ -47,8 +47,8 @@
     background-image: url("../img/radio-off.svg");
     background-size: cover;
     position: absolute;
-    top: -3px;
-    left: -43px;
+    top: -4px;
+    left: -45px;
   }
 
   &:checked + label::before {
@@ -83,11 +83,11 @@
   }
 
   .diet-selection__label {
-    margin-left: 86px;
+    margin-left: 88px;
   }
 
   .diet-selection__item {
-    margin-bottom: 21px;
+    margin-bottom: 23px;
 
     &:first-child {
       margin-top: 27px;
@@ -102,8 +102,8 @@
     + label::before {
       width: 40px;
       height: 40px;
-      top: -4.5px;
-      left: -58px;
+      top: -5.5px;
+      left: -60px;
     }
   }
 }

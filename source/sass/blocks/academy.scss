@@ -22,8 +22,12 @@
   margin-bottom: 17px;
 }
 
-.academy__svg:hover path,
-.academy__svg:active path {
+.academy__svg {
+  fill: $svg-grey;
+}
+
+.academy__svg:hover,
+.academy__svg:active {
   fill: $green;
 }
 

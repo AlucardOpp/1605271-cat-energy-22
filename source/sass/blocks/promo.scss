@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: center;
   height: 302px;
-  margin-bottom: 136px;
+  margin-bottom: 137px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-container-background@2x.jpg");
@@ -24,7 +24,7 @@
     background-image: url("../img/promo-image.png");
     background-repeat: no-repeat;
     background-size: 280px 270px;
-    background-position: 50% 30px;
+    background-position: 50% 28px;
     z-index: 2;
     top: 50px;
     left: 50px;
@@ -76,6 +76,8 @@
     color: $black;
     font-size: 60px;
     line-height: 60px;
+    padding-top: 29px;
+    padding-bottom: 41px;
   }
 
   .promo__text {
@@ -85,7 +87,6 @@
     line-height: 20px;
   }
 
-  .promo__link,
   .promo__title,
   .promo__text {
     margin-left: 117px;
@@ -106,7 +107,7 @@
       height: 639px;
       background-size: 709px 609px;
       background-image: url("../img/promo-image-tablet.png");
-      background-position: 33px 21px;
+      background-position: 29px 19px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/promo-image-tablet@2x.png");
@@ -118,6 +119,7 @@
     position: relative;
     top: -591px;
     width: 244px;
+    margin-left: 112px;
   }
 }
 
@@ -131,7 +133,7 @@
       background-image: url("../img/promo-container-background-desktop.jpg");
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: 0 center;
       width: 50%;
       height: 694px;
       right: 0;
@@ -146,7 +148,7 @@
   .promo__wrapper {
     width: 1060px;
     margin: 0 auto;
-    margin-bottom: 333px;
+    margin-bottom: 320px;
   }
 
   .promo__container {
@@ -174,7 +176,7 @@
   }
 
   .promo__title {
-    padding-top: 125px;
+    padding-top: 133px;
     padding-bottom: 40px;
   }
 

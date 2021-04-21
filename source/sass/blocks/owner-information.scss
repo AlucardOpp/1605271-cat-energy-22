@@ -22,13 +22,13 @@
     background: $green;
     position: absolute;
     left: 0;
-    top: 40px;
+    top: 42px;
     content: "";
   }
 }
 
 .owner-information__title {
-  margin: 25px 0 34px 0;
+  margin: 26px 0 35px 0;
   z-index: 2;
   text-align: start;
   background: $white;
@@ -74,6 +74,7 @@
   position: relative;
   width: 100%;
   padding-left: 14px;
+  border: 1px solid $border-example;
 
   &:focus,
   &:invalid {
@@ -143,14 +144,14 @@
 
   .owner-information__block {
     &::before {
-      top: 94px;
+      top: 99px;
     }
   }
 
   .owner-information__title {
     width: 512px;
-    padding: 0 40px 0 38px;
-    margin: 71px 0 76px -38px;
+    padding: 0 42px 0 38px;
+    margin: 76px 0 76px -38px;
   }
 
   .owner-information__wrapper {
@@ -166,6 +167,10 @@
     &--tel {
       min-width: 99px;
     }
+  }
+
+  .owner-information__item {
+    margin-bottom: 19px;
   }
 
   .owner-information__input {
@@ -210,7 +215,7 @@
 
   .owner-information__block {
     &::before {
-      top: 92px;
+      top: 91px;
     }
   }
 
