@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/icon.svg" type="image/svg+xml">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -104,6 +104,9 @@
             <div class="product-card__wrapper">
               <div class="product-card__container">
                 <picture class="product-card__image product-card__image--fish-500g">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat-energy-pro-fish-500g-tablet.webp 1x, ./img/cat-energy-pro-fish-500g-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/cat-energy-pro-fish-500g.webp 1x, ./img/cat-energy-pro-fish-500g@2x.webp 2x">
+
                   <source media="(min-width: 768px)" srcset="./img/cat-energy-pro-fish-500g-tablet.png, ./img/cat-energy-pro-fish-500g-tablet@2x.png 2x">
                   <img src="./img/cat-energy-pro-fish-500g.png" srcset="./img/cat-energy-pro-fish-500g@2x.png 2x" alt="Изображение Кэт Энерджи PRO с рыбой размерностью 500 грамм">
                 </picture>
@@ -128,6 +131,9 @@
             <div class="product-card__wrapper">
               <div class="product-card__container">
                 <picture class="product-card__image product-card__image--fish-1000g">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat-energy-pro-fish-1000g-tablet.webp 1x, ./img/cat-energy-pro-fish-1000g-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/cat-energy-pro-fish-1000g.webp 1x, ./img/cat-energy-pro-fish-1000g@2x.webp 2x">
+
                   <source media="(min-width: 768px)" srcset="./img/cat-energy-pro-fish-1000g-tablet.png, ./img/cat-energy-pro-fish-1000g-tablet@2x.png 2x">
                   <img src="./img/cat-energy-pro-fish-1000g.png" srcset="./img/cat-energy-pro-fish-1000g@2x.png 2x" alt="Изображение Кэт Энерджи PRO с рыбой размерностью 1000 грамм">
                 </picture>
@@ -151,6 +157,9 @@
           <li class="product-card">
             <div class="product-card__wrapper">
               <picture class="product-card__image product-card__image--buckwheat-500g">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat-energy-slim-buckwheat-500g-tablet.webp 1x, ./img/cat-energy-slim-buckwheat-500g-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/cat-energy-slim-buckwheat-500g.webp 1x, ./img/cat-energy-slim-buckwheat-500g@2x.webp 2x">
+
                 <source media="(min-width: 768px)" srcset="./img/cat-energy-slim-buckwheat-500g-tablet.png, ./img/cat-energy-slim-buckwheat-500g-tablet@2x.png 2x">
                 <img src="./img/cat-energy-slim-buckwheat-500g.png" srcset="./img/cat-energy-slim-buckwheat-500g@2x.png 2x" alt="Изображение Кэт Энерджи SLIM с гречкой размерностью 500 грамм">
               </picture>
@@ -176,6 +185,9 @@
             <div class="product-card__wrapper">
               <div class="product-card__container">
                 <picture class="product-card__image product-card__image--buckwheat-1000g">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat-energy-slim-buckwheat-1000g-tablet.webp 1x, ./img/cat-energy-slim-buckwheat-1000g-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/cat-energy-slim-buckwheat-1000g.webp 1x, ./img/cat-energy-slim-buckwheat-1000g@2x.webp 2x">
+
                   <source media="(min-width: 768px)" srcset="./img/cat-energy-slim-buckwheat-1000g-tablet.png, ./img/cat-energy-slim-buckwheat-1000g-tablet@2x.png 2x">
                   <img src="./img/cat-energy-slim-buckwheat-1000g.png" srcset="./img/cat-energy-slim-buckwheat-1000g@2x.png 2x" alt="Изображение Кэт Энерджи SLIM с гречкой размерностью 1000 грамм">
                 </picture>
@@ -199,6 +211,9 @@
             <div class="product-card__wrapper">
               <div class="product-card__container">
                 <picture class="product-card__image product-card__image--rice-500g">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat-energy-slim-rice-500g-tablet.webp 1x, ./img/cat-energy-slim-rice-500g-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/cat-energy-slim-rice-500g.webp 1x, ./img/cat-energy-slim-rice-500g@2x.webp 2x">
+
                   <source media="(min-width: 768px)" srcset="./img/cat-energy-slim-rice-500g-tablet.png, ./img/cat-energy-slim-rice-500g-tablet@2x.png 2x">
                   <img src="./img/cat-energy-slim-rice-500g.png" srcset="./img/cat-energy-slim-rice-500g@2x.png 2x" alt="Изображение Кэт Энерджи SLIM с рисом размерностью 500 грамм">
                 </picture>
@@ -302,21 +317,21 @@
             <li class="socials__item socials__item--vk">
               <a href="#">
                 <svg class="socials__svg socials__svg--vk" width="23" height="16">
-                  <use xlink:href="./img/vector-sprite.svg#icon-vkontakte"></use>
+                  <use xlink:href="./img/sprite.svg#icon-vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item socials__item--instagram">
               <a href="#">
                 <svg class="socials__svg socials__svg--instagram" width="16" height="16">
-                  <use xlink:href="./img/vector-sprite.svg#icon-instagram"></use>
+                  <use xlink:href="./img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a href="#">
                 <svg class="socials__svg socials__svg--facebook" width="22" height="22">
-                  <use xlink:href="./img/vector-sprite.svg#icon-facebook"></use>
+                  <use xlink:href="./img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -325,7 +340,7 @@
         <div class="useful-links__academy academy">
           <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive"><svg class="academy__svg" width="27" height="34">
-              <use xlink:href="./img/vector-sprite.svg#academy-logo"></use>
+              <use xlink:href="./img/sprite.svg#academy-logo"></use>
             </svg>
           </a>
         </div>
@@ -333,7 +348,7 @@
     </section>
   </footer>
 
-  <script src="./js/script.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>
