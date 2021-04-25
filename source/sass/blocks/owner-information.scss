@@ -91,13 +91,13 @@
 
   &:focus {
     background-image: url("../img/icon_email-focus.svg");
-    background-position: top 15px right 12.5px;
+    background-position: top 15px right 12.515px;
     background-size: 17px 12px;
   }
 
   &:invalid {
     background-image: url("../img/icon_email-error.svg");
-    background-position: top 15px right 12.5px;
+    background-position: top 15px right 12.515px;
     background-size: 17px 12px;
   }
 }

@@ -20,6 +20,12 @@
   }
 }
 
+.form__program {
+  @media (min-width: 330px) {
+    margin-left: 3px;
+  }
+}
+
 .form__inner {
   display: flex;
   flex-direction: column;
@@ -52,6 +58,10 @@
     margin: 0 70px;
   }
 
+  .form__program {
+    margin: 0;
+  }
+
   .form__title {
     margin-top: 29px;
     margin-bottom: 54px;
@@ -65,12 +75,6 @@
 
     br {
       display: block;
-    }
-
-    @media (min-width: 788px) {
-      br {
-        display: none;
-      }
     }
   }
 

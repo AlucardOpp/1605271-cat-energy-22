@@ -5,6 +5,19 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи-Форма</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Функциональное питание для котов Cat Energy">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/oswaldregular.woff" as="font" crossorigin>
+  <link rel="preload" href="./fonts/oswaldmedium.woff" as="font" crossorigin>
+  <link rel="preload" href="./img/icon_email-focus.svg" as="image">
+  <link rel="preload" href="./img/icon_email-error.svg" as="image">
+  <link rel="preload" href="./img/icon_phone-focus.svg" as="image">
+  <link rel="preload" href="./img/icon_phone-error.svg" as="image">
+  <link rel="preload" href="./img/radio-off-hover.svg" as="image">
+  <link rel="preload" href="./img/radio-on-hover.svg" as="image">
+  <link rel="preload" href="./img/checkbox-off-hover.svg" as="image">
+  <link rel="preload" href="./img/checkbox-on-hover.svg" as="image">
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/icon.svg" type="image/svg+xml">
   <link href="./css/style.min.css" rel="stylesheet">
@@ -14,23 +27,23 @@
   <header class="page-header page-header--form page-header--closed page-header--nojs">
     <div class="page-header__wrapper page-header__wrapper--form">
       <div class="page-header__image-and-logo">
-        <a class="page-header__image-logo" href="./index.html">
+        <a class="page-header__image-logo" href="./index.html" aria-label="Ссылка в виде котика на главную страницу">
           <div class="page-header__image-logo-img"></div>
         </a>
-        <a class="page-header__name-logo" href="./index.html">
+        <a class="page-header__name-logo" href="./index.html" aria-label="Ссылка в виде названия компании на главную страницу">
           <img class="page-header__name-logo__img" src="./img/name-logo.svg" width="101" height="18" alt="Название компании Cat Energy">
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню навигации</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--main">
-            <a class="site-list__link site-list__link--form" href="./index.html">Главная</a>
+            <a class="site-list__link site-list__link--form" href="./index.html" aria-label="Ссылка на главную страницу">Главная</a>
           </li>
           <li class="site-list__item site-list__item--catalog">
-            <a class="site-list__link site-list__link--form" href="./catalog.html">Каталог продукции</a>
+            <a class="site-list__link site-list__link--form" href="./catalog.html" aria-label="Ссылка на страницу каталога продукции">Каталог продукции</a>
           </li>
           <li class="site-list__item site-list__item--form">
             <a class="site-list__link site-list__link--form site-list__link--current">Подбор программы</a>
@@ -44,7 +57,7 @@
     <form class="page_main__form form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form__wrapper">
         <h1 class="form__title title title--size-main">Подбор программы</h1>
-        <p class="form__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+        <p class="form__text">Заполните анкету, и мы подберем <br> <span class="form__program">программу питания для вашего кота</span></p>
       </div>
       <div class="form__inner">
         <section class="cat-information">
@@ -53,15 +66,15 @@
             <ul class="cat-information__list">
               <li class="cat-information__item">
                 <label class="cat-information__label cat-information__label--name label label--input" for="cat-name">ИМЯ:*</label>
-                <input class="cat-information__input cat-information__input--name input input--text" type="text" id="cat-name" name="cat-name" value="барсик" required>
+                <input class="cat-information__input cat-information__input--name input input--text" type="text" id="cat-name" name="cat-name" value="барсик" required aria-label="Поле ввода имени кота">
               </li>
               <li class="cat-information__item">
                 <label class="cat-information__label cat-information__label--weight label label--input" for="cat-weight">Вес (кг):*</label>
-                <input class="cat-information__input cat-information__input--weight input input--number" type="text" id="cat-weight" name="cat-weight" value="7" required>
+                <input class="cat-information__input cat-information__input--weight input input--number" type="text" id="cat-weight" name="cat-weight" value="7" required aria-label="Поле ввода веса кота">
               </li>
               <li class="cat-information__item">
                 <label class="cat-information__label cat-information__label--age label label--input" for="cat-age">Возраст (лет):</label>
-                <input class="cat-information__input cat-information__input--age input input--number" type="text" id="cat-age" name="cat-age" value="7">
+                <input class="cat-information__input cat-information__input--age input input--number" type="text" id="cat-age" name="cat-age" value="7" aria-label="Поле ввода возраста кота">
               </li>
             </ul>
           </div>
@@ -72,15 +85,15 @@
             <ul class="diet-selection__list">
               <li class="diet-selection__item">
                 <input id="weight-loss" type="radio" class="diet-selection__radio visually-hidden" value="weight-loss" name="diet-selection" tabindex="0" checked>
-                <label class="diet-selection__label label label--radio" for="weight-loss">похудение</label>
+                <label class="diet-selection__label label label--radio" for="weight-loss" aria-label="Кнопка выбора похудения в подборе программы">похудение</label>
               </li>
               <li class="diet-selection__item">
                 <input id="weight-gain" type="radio" class="diet-selection__radio visually-hidden" value="weight-gain" tabindex="0" name="diet-selection">
-                <label class="diet-selection__label label label--radio" for="weight-gain">Набор массы</label>
+                <label class="diet-selection__label label label--radio" for="weight-gain" aria-label="Кнопка выбора набора массы в подборе программы">Набор массы</label>
               </li>
               <li class="diet-selection__item">
                 <input id="weight-advice" type="radio" class="diet-selection__radio visually-hidden" value="weight-advice" tabindex="0" name="diet-selection">
-                <label class="diet-selection__label label label--radio" for="weight-advice">Не знаю (Нужен ваш
+                <label class="diet-selection__label label label--radio" for="weight-advice" aria-label="Кнопка выбора совета в подборе программы">Не знаю (Нужен ваш
                   совет)</label>
               </li>
             </ul>
@@ -97,11 +110,11 @@
           <ul class="owner-information__list">
             <li class="owner-information__item owner-information__item--email">
               <label class="owner-information__label owner-information__label--email label label--input" for="owner-email">E-mail:*</label>
-              <input class="owner-information__input owner-information__input--email input" autocomplete="off" type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com" required>
+              <input class="owner-information__input owner-information__input--email input" autocomplete="off" type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com" required aria-label="Поле ввода электронной почты владельца кота">
             </li>
             <li class="owner-information__item owner-information__item--tel">
               <label class="owner-information__label owner-information__label--tel label label--input" for="owner-tel">Телефон:*</label>
-              <input class="owner-information__input owner-information__input--tel input" autocomplete="off" type="tel" id="owner-tel" name="owner-tel" value="8 (960) 900-60-90" required>
+              <input class="owner-information__input owner-information__input--tel input" autocomplete="off" type="tel" id="owner-tel" name="owner-tel" value="8 (960) 900-60-90" required aria-label="Поле ввода мобильного телефона владельца кота">
             </li>
           </ul>
         </div>
@@ -113,7 +126,7 @@
           </div>
         </div>
         <div class="comment__wrapper">
-          <textarea class="comment__textarea input" name="comment" id="comment">Расскажите обо всех повадках кота</textarea>
+          <textarea class="comment__textarea input" name="comment" id="comment" aria-label="Поле ввода информации о коте">Расскажите обо всех повадках кота</textarea>
         </div>
       </section>
       <section class="additionally">
@@ -126,25 +139,25 @@
           <ul class="additionally__list">
             <li class="additionally__item">
               <input type="checkbox" checked class="additionally__checkbox visually-hidden" id="additionally-sweetener" name="sweetener">
-              <label for="additionally-sweetener" class="additionally__label label label--checkbox">сахарозаменитель</label>
+              <label for="additionally-sweetener" class="additionally__label label label--checkbox" aria-label="Кнопка выбора сахарозаменителя в дополнительных пожеланиях">сахарозаменитель</label>
             </li>
             <li class="additionally__item">
               <input type="checkbox" class="additionally__checkbox visually-hidden" id="additionally-water" name="water">
-              <label for="additionally-water" class="additionally__label label label--checkbox">питьевая вода</label>
+              <label for="additionally-water" class="additionally__label label label--checkbox" aria-label="Кнопка выбора питьевой воды в дополнительных пожеланиях">питьевая вода</label>
             </li>
             <li class="additionally__item">
               <input type="checkbox" class="additionally__checkbox visually-hidden" id="additionally-milk" name="milk">
-              <label for="additionally-milk" class="additionally__label label label--checkbox">молоко</label>
+              <label for="additionally-milk" class="additionally__label label label--checkbox" aria-label="Кнопка выбора молока в дополнительных пожеланиях">молоко</label>
             </li>
             <li class="additionally__item">
               <input type="checkbox" class="additionally__checkbox visually-hidden" id="additionally-vitamins" name="vitamins">
-              <label for="additionally-vitamins" class="additionally__label label label--checkbox">витамины</label>
+              <label for="additionally-vitamins" class="additionally__label label label--checkbox" aria-label="Кнопка выбора витаминов в дополнительных пожеланиях">витамины</label>
             </li>
           </ul>
         </div>
       </section>
       <div class="form__container">
-        <button class="form__button button" type="submit">отправить заявку</button>
+        <button class="form__button button" type="submit" aria-label="Кнопка отправки заявки">отправить заявку</button>
         <p class="form__required-fields">* — Обязательные поля</p>
       </div>
     </form>
@@ -159,33 +172,34 @@
       </div>
     </section>
     <section class="page-footer__map map">
-      <div class="map__image"></div>
+      <h2 class="visually-hidden">Карта/Местоположение</h2>
+      <iframe title="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург на ней" class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.610589283863!2d30.322843550767995!3d59.938603620269596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619347047029!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
     </section>
     <section class="page-footer__useful-links useful-links">
       <div class="useful-links__wrapper">
         <h2 class="visually-hidden">Полезные ссылки</h2>
         <div class="useful-links__logo">
-          <a href="./index.html"><img class="useful-links__logo__image" src="./img/name-logo.svg" width="128" height="24" alt="Название компании Cat Energy"></a>
+          <a href="./index.html" aria-label="Ссылка на главную страницу Cat Energy"><img class="useful-links__logo__image" src="./img/name-logo.svg" width="128" height="24" alt="Название компании Cat Energy"></a>
         </div>
         <div class="useful-links__socials socials">
           <ul class="socials__list">
             <li class="socials__item socials__item--vk">
               <a href="#">
-                <svg class="socials__svg socials__svg--vk" width="23" height="16">
+                <svg class="socials__svg socials__svg--vk" width="23" height="16" aria-label="Ссылка на страницу в Вконтакте">
                   <use xlink:href="./img/sprite.svg#icon-vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item socials__item--instagram">
               <a href="#">
-                <svg class="socials__svg socials__svg--instagram" width="16" height="16">
+                <svg class="socials__svg socials__svg--instagram" width="16" height="16" aria-label="Ссылка на страницу в Инстаграм">
                   <use xlink:href="./img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a href="#">
-                <svg class="socials__svg socials__svg--facebook" width="22" height="22">
+                <svg class="socials__svg socials__svg--facebook" width="22" height="22" aria-label="Ссылка на страницу в Фэйсбук">
                   <use xlink:href="./img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -193,8 +207,8 @@
           </ul>
         </div>
         <div class="useful-links__academy academy">
-          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive"><svg class="academy__svg" width="27" height="34">
+          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на страницу курса адаптивности в HTML Academy">HTML Academy</a>
+          <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive"><svg class="academy__svg" width="27" height="34" aria-label="Ссылка на страницу курса адаптивности в HTML Academy">
               <use xlink:href="./img/sprite.svg#academy-logo"></use>
             </svg>
           </a>
