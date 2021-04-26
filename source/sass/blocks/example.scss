@@ -95,9 +95,18 @@
   margin: 0 0 36px 0;
   align-self: center;
 
+  &--became {
+    margin-bottom: 6px;
+  }
+
   br {
     display: none;
   }
+}
+
+.example__costs--price {
+  position: relative;
+  left: 3px;
 }
 
 .example__photo-change {
@@ -106,7 +115,19 @@
 
 .example__image {
   object-fit: cover;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
+}
+
+.example__image--show {
+  display: inline-block;
+}
+
+.example__image--hide {
+  display: none;
+}
+
+.example__image--slim {
+  margin-bottom: 0;
 }
 
 .example__it-became {
@@ -214,6 +235,10 @@
     margin-top: 12px;
     text-align: end;
 
+    &--became {
+      margin-bottom: 36px;
+    }
+
     br {
       display: block;
     }
@@ -222,6 +247,7 @@
   .example__costs--price {
     position: relative;
     top: 8px;
+    left: auto;
   }
 
   .example__photo-change {
@@ -275,6 +301,48 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/slim-cat-half-tablet@2x.png");
+      }
+    }
+  }
+
+  .example__it-became--it {
+    &::before {
+      content: "";
+      width: 677px;
+      height: 520px;
+      background-image: url("../img/fat-cat.png");
+      background-size: cover;
+      position: absolute;
+      top: -533px;
+      left: -53px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/fat-cat@2x.png");
+      }
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .example__it-became--became {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 545px;
+      height: 520px;
+      background-image: url("../img/slim-cat.png");
+      background-size: cover;
+      top: -533px;
+      right: -13px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/slim-cat@2x.png");
       }
     }
   }
@@ -411,6 +479,34 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/slim-cat-half-desktop@2x.png");
+      }
+    }
+  }
+
+  .example__it-became--it {
+    &::before {
+      width: 677px;
+      height: 520px;
+      top: -553px;
+      left: -78px;
+      background-image: url("../img/fat-cat.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/fat-cat@2x.png");
+      }
+    }
+  }
+
+  .example__it-became--became {
+    &::after {
+      width: 545px;
+      height: 520px;
+      top: -554px;
+      right: 13px;
+      background-image: url("../img/slim-cat.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/slim-cat@2x.png");
       }
     }
   }

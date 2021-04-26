@@ -7,6 +7,7 @@
   position: relative;
   background-image: url("../img/promo-container-background.jpg");
   background-repeat: no-repeat;
+  background-color: $promo-container-green;
   background-size: cover;
   background-position: center;
   height: 302px;
@@ -97,6 +98,7 @@
   }
 
   .promo__container {
+    background-color: inherit;
     background-image: none;
     z-index: -1;
     margin-bottom: 0;
@@ -132,6 +134,7 @@
       content: "";
       background-image: url("../img/promo-container-background-desktop.jpg");
       background-size: cover;
+      background-color: $promo-container-green;
       background-repeat: no-repeat;
       background-position: 0 center;
       width: 50%;

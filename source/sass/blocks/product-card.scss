@@ -28,6 +28,10 @@
   width: 100%;
 }
 
+.product-card__image-link:focus .product-card__image {
+  outline: $black solid 2px;
+}
+
 .product-card__image {
   position: absolute;
 
@@ -83,6 +87,10 @@
 
 .product-card__container {
   margin-left: 140px;
+}
+
+.product-card__link {
+  text-decoration: none;
 }
 
 .product-card__title {
