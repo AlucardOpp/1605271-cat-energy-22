@@ -8,7 +8,7 @@ let afterImage = document.querySelector(".example__image--slim");
 let rangeBar = document.querySelector(".range-controls__bar");
 let exampleItBecame = document.querySelector(".example__it-became");
 let exampleCosts = document.querySelector(".example__costs");
-let rangeToggle = document.querySelector(".range-controls__toggle");
+let rangeToggle = document.querySelector(".example__toggle");
 
 mainNav.classList.remove("main-nav--nojs");
 pageHeader.classList.remove("page-header--nojs");
@@ -30,8 +30,8 @@ beforeButton.addEventListener("click", function() {
   exampleCosts.classList.remove("example__costs--became");
   exampleItBecame.classList.add("example__it-became--it");
   exampleItBecame.classList.remove("example__it-became--became");
-  rangeToggle.classList.add("range-controls__toggle--it");
-  rangeToggle.classList.remove("range-controls__toggle--became");
+  rangeToggle.classList.add("example__toggle--it");
+  rangeToggle.classList.remove("example__toggle--became");
 });
 
 afterButton.addEventListener("click", function() {
@@ -44,6 +44,6 @@ afterButton.addEventListener("click", function() {
   exampleCosts.classList.add("example__costs--became");
   exampleItBecame.classList.remove("example__it-became--it");
   exampleItBecame.classList.add("example__it-became--became");
-  rangeToggle.classList.remove("range-controls__toggle--it");
-  rangeToggle.classList.add("range-controls__toggle--became");
+  rangeToggle.classList.remove("example__toggle--it");
+  rangeToggle.classList.add("example__toggle--became");
 });
