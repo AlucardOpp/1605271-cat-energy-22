@@ -32,7 +32,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__list.site-list {
+  .site-list {
     display: flex;
     min-width: 440px;
     position: static;
@@ -76,6 +76,12 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: 478px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .site-list__item {
+    margin-bottom: 15px;
   }
 
   .site-list__item--main {

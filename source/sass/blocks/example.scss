@@ -115,7 +115,7 @@
 
 .example__image {
   object-fit: cover;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .example__image--show {
@@ -134,7 +134,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
 }
 
 .example__it,
@@ -166,11 +166,11 @@
 
   .example__wrapper {
     min-width: 708px;
-    margin: 0 30px 230px 30px;
+    margin: 0 30px 231px 30px;
   }
 
   .example__title {
-    margin: 0 0 65px 0;
+    margin: 0 0 64px 0;
   }
 
   .example__information {
@@ -221,6 +221,7 @@
     font-size: 30px;
     line-height: 37px;
     padding-bottom: 19px;
+    padding-top: 14px;
   }
 
   .example__description {
@@ -260,7 +261,7 @@
     background-color: $example-background-grey;
     position: relative;
     z-index: 1;
-    padding-bottom: 34px;
+    padding-bottom: 35px;
   }
 
   .example__image {
@@ -279,6 +280,7 @@
     position: relative;
     margin: 0 auto;
     z-index: 0;
+
 
     &::before {
       content: "";
@@ -378,24 +380,50 @@
     background-image: url("../img/range-toggle.svg");
     background-size: cover;
     top: 0.6px;
+    left: 268px;
 
     &:hover {
+      width: 36px;
+      height: 36px;
       background-image: url("../img/range-toggle-hover.svg");
       top: 0.7px;
+      left: 267px;
     }
 
     &:active {
+      width: 38px;
+      height: 38px;
       background-image: url("../img/range-toggle-active.svg");
       top: 1.1px;
+      left: 266px;
     }
   }
 
   .example__toggle--it {
     left: 63px;
+
+    &:hover {
+      left: 62px;
+    }
+
+    &:active {
+      left: 61px;
+    }
   }
 
   .example__toggle--became {
     right: 63px;
+    left: auto;
+
+    &:hover {
+      right: 62px;
+      left: auto;
+    }
+
+    &:active {
+      right: 61px;
+      left: auto;
+    }
   }
 }
 

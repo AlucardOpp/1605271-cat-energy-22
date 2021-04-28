@@ -11,7 +11,7 @@
 
 .contacts__dealers {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $black-111;
   margin: 28px 0 26px 0;
@@ -25,6 +25,7 @@
   color: $special-grey;
   margin: 28px 0 6px 0;
   min-height: 60px;
+  font-style: normal;
 }
 
 .contacts__city {
@@ -74,7 +75,7 @@
   .contacts {
     position: relative;
     width: 570px;
-    height: 201px;
+    min-height: 201px;
     z-index: 1;
     margin: -201px auto 0 auto;
     top: 296px;
@@ -88,15 +89,17 @@
   }
 
   .contacts__dealers {
-    margin-left: 76px;
+    margin: 66px 80px 0 76px;
     text-align: start;
-    margin-top: 66px;
-    margin-right: 80px;
+    height: auto;
+    min-height: 84px;
   }
 
   .contacts__address {
     margin-right: 89px;
     text-align: start;
+    height: auto;
+    min-height: 81px;
   }
 
   .contacts--grey {

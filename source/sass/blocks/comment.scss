@@ -28,9 +28,8 @@
 }
 
 .comment__title {
-  margin: 24px 0 37px 0;
-  margin-left: -20px;
-  padding: 0 20px;
+  margin: 24px 0 37px -21px;
+  padding: 0 21px;
   background: $white;
   z-index: 2;
   text-align: start;
@@ -59,7 +58,7 @@
 @media (min-width: $tablet-width) {
   .comment__block {
     &::before {
-      top: 88px;
+      top: 87px;
     }
   }
 
@@ -70,19 +69,18 @@
 
   .comment__title {
     width: 182px;
-    margin: 65px 0 78px 0;
+    margin: 65px 0 76px -40px;
     padding: 0 38px 0 38px;
-    margin-left: -38px;
   }
 
   .comment__wrapper {
     min-width: 628px;
-    margin: 0 70px;
+    margin: 0 67px 0 70px;
   }
 
   .comment__textarea {
     height: 174px;
-    padding-left: 16px;
+    padding-left: 18px;
 
     &:focus {
       padding-left: 15px;
@@ -115,10 +113,10 @@
   }
 
   .comment__textarea {
-    padding-left: 19px;
+    padding-left: 18px;
 
     &:focus {
-      padding-left: 18px;
+      padding-left: 17px;
     }
   }
 }

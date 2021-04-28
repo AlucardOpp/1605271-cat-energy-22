@@ -29,12 +29,11 @@
 }
 
 .additionally__title {
-  margin: 18px 0 35px 0;
-  padding: 0 20px;
+  margin: 18px 0 36px -22px;
+  padding: 0 22px;
   text-align: start;
   z-index: 2;
   width: 141px;
-  margin-left: -20px;
   background: $white;
 }
 
@@ -110,10 +109,9 @@
   }
 
   .additionally__title {
-    margin: 60px 0 63px 0;
+    margin: 60px 0 63px -40px;
     width: 211px;
-    padding: 0 38px;
-    margin-left: -38px;
+    padding: 0 40px;
   }
 
   .additionally__block {
@@ -138,11 +136,11 @@
     justify-content: space-between;
 
     :nth-child(odd) {
-      min-width: 335px;
+      min-width: 340px;
     }
 
     :nth-child(even) {
-      min-width: 345px;
+      min-width: 285px;
     }
   }
 
@@ -164,7 +162,7 @@
   }
 }
 
-@media (min-width: 1108px) {
+@media (min-width: 1077px) {
   .additionally__list {
     :nth-child(odd) {
       min-width: 0;
@@ -180,7 +178,7 @@
 
 @media (min-width: $desktop-width) {
   .additionally {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   .additionally__title {
@@ -207,7 +205,7 @@
   }
 
   .additionally__list {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     :nth-child(odd) {
       min-width: 0;
@@ -227,6 +225,12 @@
 
     &:last-child {
       margin-right: 24px;
+    }
+  }
+
+  .additionally__checkbox {
+    + label::before {
+      left: 0;
     }
   }
 }

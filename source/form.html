@@ -8,8 +8,6 @@
   <meta name="description" content="Функциональное питание для котов Cat Energy">
   <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin>
   <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin>
-  <link rel="preload" href="./fonts/oswaldregular.woff" as="font" crossorigin>
-  <link rel="preload" href="./fonts/oswaldmedium.woff" as="font" crossorigin>
   <link rel="preload" href="./img/icon_email-focus.svg" as="image">
   <link rel="preload" href="./img/icon_email-error.svg" as="image">
   <link rel="preload" href="./img/icon_phone-focus.svg" as="image">
@@ -27,9 +25,7 @@
   <header class="page-header page-header--form page-header--closed page-header--nojs">
     <div class="page-header__wrapper page-header__wrapper--form">
       <div class="page-header__image-and-logo">
-        <a class="page-header__image-logo" href="./index.html" aria-label="Ссылка в виде котика на главную страницу">
-          <div class="page-header__image-logo-img"></div>
-        </a>
+        <a class="page-header__image-logo" href="./index.html" aria-label="Ссылка в виде котика на главную страницу"></a>
         <a class="page-header__name-logo" href="./index.html" aria-label="Ссылка в виде названия компании на главную страницу">
           <img class="page-header__name-logo__img" src="./img/name-logo.svg" width="101" height="18" alt="Название компании Cat Energy">
         </a>
@@ -66,15 +62,15 @@
             <ul class="cat-information__list">
               <li class="cat-information__item">
                 <label class="cat-information__label cat-information__label--name label label--input" for="cat-name">ИМЯ:*</label>
-                <input class="cat-information__input cat-information__input--name input input--text" type="text" id="cat-name" name="cat-name" value="барсик" required aria-label="Поле ввода имени кота">
+                <input class="cat-information__input cat-information__input--name input input--text" type="text" id="cat-name" name="cat-name" placeholder="барсик" required aria-label="Поле ввода имени кота">
               </li>
               <li class="cat-information__item">
                 <label class="cat-information__label cat-information__label--weight label label--input" for="cat-weight">Вес (кг):*</label>
-                <input class="cat-information__input cat-information__input--weight input input--number" type="text" id="cat-weight" name="cat-weight" value="7" required aria-label="Поле ввода веса кота">
+                <input class="cat-information__input cat-information__input--weight input input--number" type="number" id="cat-weight" name="cat-weight" placeholder="7" required aria-label="Поле ввода веса кота">
               </li>
               <li class="cat-information__item">
                 <label class="cat-information__label cat-information__label--age label label--input" for="cat-age">Возраст (лет):</label>
-                <input class="cat-information__input cat-information__input--age input input--number" type="text" id="cat-age" name="cat-age" value="7" aria-label="Поле ввода возраста кота">
+                <input class="cat-information__input cat-information__input--age input input--number" type="number" id="cat-age" name="cat-age" placeholder="7" aria-label="Поле ввода возраста кота">
               </li>
             </ul>
           </div>
@@ -110,11 +106,11 @@
           <ul class="owner-information__list">
             <li class="owner-information__item owner-information__item--email">
               <label class="owner-information__label owner-information__label--email label label--input" for="owner-email">E-mail:*</label>
-              <input class="owner-information__input owner-information__input--email input" autocomplete="off" type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com" required aria-label="Поле ввода электронной почты владельца кота">
+              <input class="owner-information__input owner-information__input--email input" autocomplete="off" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required aria-label="Поле ввода электронной почты владельца кота">
             </li>
             <li class="owner-information__item owner-information__item--tel">
               <label class="owner-information__label owner-information__label--tel label label--input" for="owner-tel">Телефон:*</label>
-              <input class="owner-information__input owner-information__input--tel input" autocomplete="off" type="tel" id="owner-tel" name="owner-tel" value="8 (960) 900-60-90" required aria-label="Поле ввода мобильного телефона владельца кота">
+              <input class="owner-information__input owner-information__input--tel input" autocomplete="off" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required aria-label="Поле ввода мобильного телефона владельца кота">
             </li>
           </ul>
         </div>
@@ -168,7 +164,7 @@
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__dealers">Приглашаем<br> к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><br> <span class="contacts__city">Санкт-Петербург</span></p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><br> <span class="contacts__city">Санкт-Петербург</span></address>
       </div>
     </section>
     <section class="page-footer__map map">
@@ -178,34 +174,30 @@
     <section class="page-footer__useful-links useful-links">
       <div class="useful-links__wrapper">
         <h2 class="visually-hidden">Полезные ссылки</h2>
-        <div class="useful-links__logo">
-          <a href="./index.html" aria-label="Ссылка на главную страницу Cat Energy"><img class="useful-links__logo__image" src="./img/name-logo.svg" width="128" height="24" alt="Название компании Cat Energy"></a>
-        </div>
-        <div class="useful-links__socials socials">
-          <ul class="socials__list">
-            <li class="socials__item socials__item--vk">
-              <a href="#">
-                <svg class="socials__svg socials__svg--vk" width="23" height="16" aria-label="Ссылка на страницу в Вконтакте">
-                  <use xlink:href="./img/sprite.svg#icon-vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item socials__item--instagram">
-              <a href="#">
-                <svg class="socials__svg socials__svg--instagram" width="16" height="16" aria-label="Ссылка на страницу в Инстаграм">
-                  <use xlink:href="./img/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#">
-                <svg class="socials__svg socials__svg--facebook" width="22" height="22" aria-label="Ссылка на страницу в Фэйсбук">
-                  <use xlink:href="./img/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <a class="useful-links__logo" href="./index.html" aria-label="Ссылка на главную страницу Cat Energy"><img class="useful-links__logo__image" src="./img/name-logo.svg" width="128" height="24" alt="Название компании Cat Energy"></a>
+        <ul class="useful-links__socials socials socials__list">
+          <li class="socials__item socials__item--vk">
+            <a href="#">
+              <svg class="socials__svg socials__svg--vk" width="23" height="16" aria-label="Ссылка на страницу в Вконтакте">
+                <use xlink:href="./img/sprite.svg#icon-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item socials__item--instagram">
+            <a href="#">
+              <svg class="socials__svg socials__svg--instagram" width="16" height="16" aria-label="Ссылка на страницу в Инстаграм">
+                <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#">
+              <svg class="socials__svg socials__svg--facebook" width="22" height="22" aria-label="Ссылка на страницу в Фэйсбук">
+                <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
         <div class="useful-links__academy academy">
           <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на страницу курса адаптивности в HTML Academy">HTML Academy</a>
           <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive"><svg class="academy__svg" width="27" height="34" aria-label="Ссылка на страницу курса адаптивности в HTML Academy">

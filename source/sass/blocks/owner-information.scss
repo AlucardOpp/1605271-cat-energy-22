@@ -22,19 +22,18 @@
     background: $green;
     position: absolute;
     left: 0;
-    top: 42px;
+    top: 41px;
     content: "";
   }
 }
 
 .owner-information__title {
-  margin: 26px 0 35px 0;
+  margin: 25px 0 35px -20px;
   z-index: 2;
   text-align: start;
   background: $white;
   padding: 0 13px 0 20px;
   width: 187px;
-  margin-left: -20px;
 }
 
 .owner-information__wrapper {
@@ -77,7 +76,7 @@
   border: 1px solid $border-example;
 
   &:focus,
-  &:invalid {
+  &-invalid {
     padding-left: 13px;
   }
 }
@@ -95,7 +94,7 @@
     background-size: 17px 12px;
   }
 
-  &:invalid {
+  &-invalid {
     background-image: url("../img/icon_email-error.svg");
     background-position: top 15px right 12.515px;
     background-size: 17px 12px;
@@ -114,7 +113,7 @@
     background-position: top 10px right 9px;
   }
 
-  &:invalid {
+  &-invalid {
     background-image: url("../img/icon_phone-error.svg");
     background-position: top 10px right 9px;
   }
@@ -144,19 +143,19 @@
 
   .owner-information__block {
     &::before {
-      top: 99px;
+      top: 98px;
     }
   }
 
   .owner-information__title {
     width: 512px;
     padding: 0 42px 0 38px;
-    margin: 76px 0 76px -38px;
+    margin: 76px 0 76px -39px;
   }
 
   .owner-information__wrapper {
     min-width: 628px;
-    margin: 0 70px;
+    margin: 0 66px 0 71px;
   }
 
   .owner-information__label {
@@ -165,20 +164,20 @@
     }
 
     &--tel {
-      min-width: 99px;
+      min-width: 96px;
     }
   }
 
   .owner-information__item {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 
   .owner-information__input {
-    padding-left: 19px;
+    padding-left: 21px;
 
     &:focus,
-    &:invalid {
-      padding-left: 18px;
+    &-invalid {
+      padding-left: 20px;
     }
   }
 
@@ -189,7 +188,7 @@
       background-position: top 19px right 14.015px;
     }
 
-    &:invalid {
+    &-invalid {
       background-position: top 19px right 14.015px;
     }
   }
@@ -201,7 +200,7 @@
       background-position: top 15.5px right 13px;
     }
 
-    &:invalid {
+    &-invalid {
       background-position: top 15.5px right 13px;
     }
   }
@@ -215,14 +214,14 @@
 
   .owner-information__block {
     &::before {
-      top: 91px;
+      top: 90px;
     }
   }
 
   .owner-information__title {
     width: 512px;
     padding: 0 39px 0 39px;
-    margin: 69px 0 76px -39px;
+    margin: 68px 0 76px -39px;
   }
 
   .owner-information__wrapper {
