@@ -40,9 +40,7 @@
 .additional-products__wrapper {
   margin: 0 20px;
   min-width: 280px;
-}
 
-.additional-products__container {
   display: flex;
   flex-direction: column;
 }
@@ -147,9 +145,6 @@
   .additional-products__wrapper {
     width: 1220px;
     margin: 0 auto;
-  }
-
-  .additional-products__container {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 86px;
